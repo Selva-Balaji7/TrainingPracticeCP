@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+     border: 2px solid black;
+    margin: auto;
+    width: 450px;
+    height: 500px;
+
+    }
+</style>
+<body>
+    <form class="box">
+        <label for="num1">Enter the number:</label>
+        <input type="text" name="num1" id="num1"><br>
+        <label for="num2">Enter second number:</label>
+        <input type="text" name="num2" id="num2"><br>
+         <button type="button" onclick="add()">Add</button>
+
+    </form>
+    <img src="../assets/images/himalayas.jpg" alt="himalaya" id="d1" height="100px" width="200px"><br>
+    <button type="button" onclick="changeImage()">change Image</button>
+
+    
+
+    <script>
+        function add(){
+           // window.alert(10);
+            let no1=document.getElementById("num1").value;
+            let no2=document.getElementById("num2").value;
+            console.log(parseInt(no1)+parseInt(no2));
+        }
+        function changeImage(){
+            document.getElementById("d1").src="../assets/images/nature.jpg";
+        }
+        
+    </script>
+</body>
+</html>
