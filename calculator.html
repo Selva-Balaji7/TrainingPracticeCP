@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+      .box{
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 95px;
+    width: 400px;
+    padding: 20px;
+}
+        .ftextfield{
+
+    position: relative;
+    left: 18px;
+    height: 30px;
+    border: 2px solid black;
+        }
+        .ltextfield{
+        height: 30px;
+        border: 2px solid black;
+
+        }
+
+
+
+      
+
+
+
+    </style>
+</head>
+<body>
+    <form class="box">
+        <label  for="num1">Enter first number:</label>
+        <input class="ftextfield" type="number" name="num1" id="num1"><br><br>
+        <label for="num2">Enter second number:</label>
+        <input class="ltextfield" type="number" name="num2" id="num2"><br><br>
+         <button type="button" class="c" onclick="add()">Add</button>
+         <button type="reset" class="btn btn-warning" onclick="sub()">Sub</button>
+         <button type="reset" class="btn btn-success" onclick="mul()">Mul</button>
+         <button type="reset" class="btn btn-info" onclick="div()">Div</button><br>
+         <label for="reset">Result:</label>
+         <span id="result"></span>
+    </form>
+
+
+
+    <script>
+            function add(){
+                let a=document.getElementById("num1").value;
+                let b=document.getElementById("num2").value;
+                let result=(parseInt(a)+parseInt(b));
+                document.getElementById("result").innerHTML=result;
+            }
+            function sub(){
+                let a=document.getElementById("num1").value;
+                let b=document.getElementById("num2").value;
+                let result=(parseInt(a)-parseInt(b));
+                document.getElementById("result").innerHTML=result;
+            }
+            function mul(){
+                let a=document.getElementById("num1").value;
+                let b=document.getElementById("num2").value;
+                let result=(parseInt(a)*parseInt(b));
+                document.getElementById("result").innerHTML=result;
+            }
+            function div(){
+                let a=document.getElementById("num1").value;
+                let b=document.getElementById("num2").value;
+                let result=(parseInt(a)/parseInt(b));
+                document.getElementById("result").innerHTML=result;
+            }
+            
+
+
+
+    </script>
+</body>
+</html>

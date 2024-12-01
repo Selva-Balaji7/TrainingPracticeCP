@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+       const employees=[
+        {id:101,name:"selva balaji",post:"full-stack developer",salary:"50000",gender:"male",age:"24",city:"kanchipuram",state:"Tamilnadu"},
+        {id:102,name:"John smith",post:"front-end developer",salary:"25000",gender:"male",age:"23",city:"coimbatore",state:"Tamilnadu"},
+        {id:103,name:"shubham",post:"back-end developer",salary:"25000",gender:"male",age:"24",city:"chennai",state:"Tamilnadu"},
+        {id:104,name:"Gayathri",post:"devops",salary:"30000",gender:"female",age:25, city:"chennai",state:"Tamilnadu"},
+        {id:105,name:"rubini",post:"full-stack developer",salary:"50000",gender:"female",age:"24",city:"Guntur",state:"Andhra Pradesh"},
+        {id:106,name:"shiva",post:"Bussiness analyst",salary:"70000",gender:"male",age:"24",city:"Hyderabad",state:"Telangana"},
+        {id:107,name:"balaji",post:"Manager",salary:"100000",gender:"male",age:"57",city:"chennai",state:"Tamilnadu"},
+        {id:108,name:"Dhoni",post:"Team leader",salary:"60000",gender:"male",age:"40",city:"Ranchi",state:"Jharkhand"},
+        {id:109,name:"vikram",post:"Technical support",salary:"20000",gender:"male",age:"22",city:"tirupati",state:"Andhra Pradesh"},
+        {id:110,name:"sneha Joshi",post:"full-stack developer",salary:"50000",gender:"female",age:"25",city:"pune",state:"maharashtra"},
+
+    ]
+    // display all 10 employees information
+     for(let o of employees)
+     {
+      document.write(`Id:${o.id} Name:${o.name} Post:${o.post} Salary:${o.salary} Gender:${o.gender} Age:${o.age} City:${o.city} State:${o.state} <br><br>`);
+     }
+     document.write("<br>");
+     for(let o of employees)
+     {
+     if(o.post=="Manager")
+     {
+      document.write(`Id:${o.id} Name:${o.name} Post:${o.post} Salary:${o.salary} Gender:${o.gender} Age:${o.age} City:${o.city} State:${o.state} `);
+     }
+     }
+     document.write("<br>");
+     for(let o of employees)
+     {
+     if(o.gender=="female")
+     {
+      document.write(`Id:${o.id} Name:${o.name} Post:${o.post} Salary:${o.salary} Gender:${o.gender} Age:${o.age} City:${o.city} State:${o.state} <br> `);
+     }
+     }
+     document.write("<br>");
+     for(let o of employees)
+     {
+     if(o.age>55)
+     {
+      document.write(`Id:${o.id} Name:${o.name} Post:${o.post} Salary:${o.salary} Gender:${o.gender} Age:${o.age} City:${o.city} State:${o.state} <br> `);
+     }
+     }
+     document.write("<br>");
+     for(let o of employees)
+     {
+     if(o.state=="Tamilnadu")
+     {
+      document.write(`Id:${o.id} Name:${o.name} Post:${o.post} Salary:${o.salary} Gender:${o.gender} Age:${o.age} City:${o.city} State:${o.state} <br> `);
+     }
+     }
+
+
+    </script>
+</body>
+</html>
