@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+    border: 6px solid black;
+    margin: auto;
+    height: 700px;
+    width: 337px;
+    margin-top: 130px;
+        }
+        #red{
+    border: 6px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 24px;
+    left: 60px;
+    background-color:white;
+        }
+        #yellow{
+         border: 6px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 33px;
+    left: 60px;
+    background-color:white;
+        }
+        #green{
+    border: 6px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+    left: 60px;
+    color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+            <div id="red">
+            </div>
+            <div id="yellow">
+            </div>
+            <div id="green">
+            </div>
+    </div>
+    <script>
+     let redLight=document.getElementById("red");
+     let yellowLight=document.getElementById("yellow");
+     let greenLight=document.getElementById("green");
+
+    
+     
+     function TrafficLight(){
+        redLight.style.backgroundColor="white";
+        yellowLight.style.backgroundColor="white";
+        greenLight.style.backgroundColor="white";
+
+        setTimeout(()=>{
+        redLight.style.backgroundColor="red";
+        yellowLight.style.backgroundColor="white";
+        greenLight.style.backgroundColor="white";
+        },0)
+
+        setTimeout(()=>{
+        redLight.style.backgroundColor="white";
+        yellowLight.style.backgroundColor="yellow";
+        greenLight.style.backgroundColor="white";
+        },3000)
+
+        setTimeout(()=>{
+        redLight.style.backgroundColor="white";
+        yellowLight.style.backgroundColor="white";
+        greenLight.style.backgroundColor="green";
+        },6000)
+        
+       
+     }
+     TrafficLight();
+     setInterval(TrafficLight,9000); 
+
+    
+    
+          
+        
+      
+     
+     
+
+
+    </script>
+</body>
+</html>

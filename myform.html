@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../JavaScript/myform.js"></script>
+</head>
+<body>
+    <form action="../html/submitpage.html" onsubmit="return formValidate()" >
+        <div>
+        <label for="fname">FirstName:</label>
+        <input type="text" name="fname" placeholder="user firstname" id="fname" ><br>
+        <label for="lname">LastName:</label>
+        <input type="text" name="lname" placeholder="user lastname" id="lname"><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="user password" id="password"><br>
+        <label for="email">Email Id:</label>
+        <input type="text" name="emailid" placeholder="user email" id="email"><br>
+        <label for="contact">Contact:</label>
+        <input type="tel" name="phone"  placeholder="user contact"  id="contact"><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" id="gender" value="male">Male
+        <input type="radio" name="gender" id="gender" value="female">Female
+        <input type="radio" name="gender" id="gender" value="Transgender">transgender<br>
+        <button type="submit">Submit</button>
+        </div>
+        
+    </form>
+</body>
+</html>
