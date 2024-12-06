@@ -7,6 +7,12 @@ import EventComp from './component/EventComp';
 import MyStateComp from './component/MyStateComp';
 import ConditionalRenComp from './component/ConditionRenComp';
 import CssComp from './component/CssComp';
+import ParentComp from './component/ParentComp';
+import ClickCounterComp from './component/ClickCounterComp';
+import MyImageComp from './component/MyImageComp';
+import UserComp from './component/UserComp';
+import UserComp1 from './component/UserComp1';
+import ErrorBoundaryComp from './component/ErrorBoundaryComp';
 
 
 function App() {
@@ -26,16 +32,32 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <h1>welcome to all </h1>
-      <FuncComp fname="selva Balaji" post="Fullstack Developer"></FuncComp> 
+      {/* <h1>welcome to all </h1> */}
+      {/* <FuncComp fname="selva Balaji" post="Fullstack Developer"></FuncComp> 
       <SelvaComp fname="Tharun Balaji" salary={10000000} post="fullstack-Developer" gender="Male" address="chennai"></SelvaComp> 
       <ClassComp fname="panchashil" post="Trainer"></ClassComp>
       <EventComp></EventComp>
       <MyStateComp></MyStateComp>
       <ConditionalRenComp></ConditionalRenComp>
-       <CssComp></CssComp>
-      
-       
+       <CssComp></CssComp> */}
+       {/* <ParentComp gender="Male" contact="9289383821"></ParentComp> */}
+       {/* <ClickCounterComp></ClickCounterComp> */}
+       {/* <MyImageComp></MyImageComp> */}
+       {/* <UserComp user="selva balaji"></UserComp> */}
+       <ErrorBoundaryComp>
+           <UserComp1 user="Panchasil"></UserComp1>
+       </ErrorBoundaryComp>
+       <ErrorBoundaryComp>
+           <UserComp1 user="Rupesh"></UserComp1>
+       </ErrorBoundaryComp>
+       <ErrorBoundaryComp>
+           <UserComp1 user="Arun"></UserComp1>
+       </ErrorBoundaryComp>
+       <ErrorBoundaryComp>
+           <UserComp1 user="Rahul"></UserComp1>
+       </ErrorBoundaryComp>
+       <UserComp1></UserComp1>
+        
     </div>
   );
 }
