@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   // array of object
+   let std=[{id:101,name:"selva",contact:78128,gender:"male"},
+   {id:102,name:"balaji",contact:8992,gender:"male"},
+   {id:103,name:"sneha",contact:93299,gender:"female"}];
+
+   document.write(`Id:${std[0].id} Name:${std[0].name} Contact:${std[0].contact} Gender:${std[0].gender} <br>`);
+
+   for(let s of std){
+    document.write(`Id:${s.id} Name:${s.name} Contact:${s.contact} Gender:${s.gender}`);
+   }
+
+
+    </script>
+</body>
+</html>
