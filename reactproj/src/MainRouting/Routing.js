@@ -9,6 +9,7 @@ import UseEffectHooksComp from "../Hooks/UseEffectHooksComp";
 import FuncComp from "../component/FuncComp";
 import UseStateHooksComp from "../Hooks/UseStateHooks";
 import PageNotFoundComp from "../Layout/PageNotFoundComp";
+import ProductDashComp from "../Crud/ProductDashComp";
 
 
 
@@ -32,6 +33,7 @@ const routing = createBrowserRouter([
         {path:"usestate",element:<UseStateHooksComp/>},
     ]},
     {path:"funccomp",element:<FuncComp/>},
+    {path:"ProductDashComp",element:<ProductDashComp/>},
 
     ]},
     

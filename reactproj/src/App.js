@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+ import logo from './logo.svg';
 import './App.css';
 import FuncComp from './component/FuncComp';
 import SelvaComp from './task/SelvaComp';
@@ -18,8 +18,8 @@ import ErrorBoundaryComp from './component/ErrorBoundaryComp';
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header className="App-header">
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -31,7 +31,7 @@ function App() {
         >
           Learn React
         </a>
-      </header> */}
+      </header>
       {/* <h1>welcome to all </h1> */}
       {/* <FuncComp fname="selva Balaji" post="Fullstack Developer"></FuncComp> 
       <SelvaComp fname="Tharun Balaji" salary={10000000} post="fullstack-Developer" gender="Male" address="chennai"></SelvaComp> 
@@ -44,7 +44,7 @@ function App() {
        {/* <ClickCounterComp></ClickCounterComp> */}
        {/* <MyImageComp></MyImageComp> */}
        {/* <UserComp user="selva balaji"></UserComp> */}
-       <ErrorBoundaryComp>
+       {/* <ErrorBoundaryComp>
            <UserComp1 user="Panchasil"></UserComp1>
        </ErrorBoundaryComp>
        <ErrorBoundaryComp>
@@ -56,7 +56,7 @@ function App() {
        <ErrorBoundaryComp>
            <UserComp1 user="Rahul"></UserComp1>
        </ErrorBoundaryComp>
-       <UserComp1></UserComp1>
+       <UserComp1></UserComp1> */}
         
     </div>
   );

@@ -10,16 +10,16 @@ const ReactHooksComp = () => {
 <p>this is react hooks component</p>
 
             <div className="card border-info">
-
+          
                 <div className="card-header border-info">
                     <Link to="useeffect" className="btn btn-primary btm-sm me-3">useffect</Link>
                     <Link to="usestate" className="btn btn-primary btm-sm me-3">usehook</Link>
                 </div>
                 <div className="card-body border-info">
-                    <Outlet/>
+                <Outlet/>  
                 </div>
-                {/* <div className="card-footer border-primary">
-                </div> */}
+                <div className="card-footer border-primary">
+                </div>
             </div>
 
         </div>
