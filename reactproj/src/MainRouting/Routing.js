@@ -10,6 +10,7 @@ import FuncComp from "../component/FuncComp";
 import UseStateHooksComp from "../Hooks/UseStateHooks";
 import PageNotFoundComp from "../Layout/PageNotFoundComp";
 import ProductDashComp from "../Crud/ProductDashComp";
+import ProtectedRouting from "./ProtectedRouting";
 
 
 
@@ -19,7 +20,7 @@ const routing = createBrowserRouter([
 
     {path:"loginComp",element:<LoginComp/>},
 
-    {path:"maindashboard",element:<MainDashBoardComp/>, children:[
+    {path:"maindashboard",element:<ProtectedRouting Component={MainDashBoardComp}/>, children:[
 
        
         {path:"myfavcolorcomp",element:<MyFavColorComp newcolor="green"/>},

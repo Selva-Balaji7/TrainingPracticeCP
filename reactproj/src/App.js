@@ -18,9 +18,9 @@ import ErrorBoundaryComp from './component/ErrorBoundaryComp';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -31,7 +31,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
       {/* <h1>welcome to all </h1> */}
       {/* <FuncComp fname="selva Balaji" post="Fullstack Developer"></FuncComp> 
       <SelvaComp fname="Tharun Balaji" salary={10000000} post="fullstack-Developer" gender="Male" address="chennai"></SelvaComp> 

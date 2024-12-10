@@ -3,8 +3,10 @@ import React, { useEffect, useState } from 'react'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Link } from 'react-router-dom';
-import { Button, Modal } from "react-bootstrap";
+import {Modal,Button} from "react-bootstrap";
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+
+
 
 
 const ProductDashComp = () => {
@@ -42,7 +44,7 @@ const ProductDashComp = () => {
 
         if (window.confirm(`are yo sure to delete with id :${id}`)) {
             axios.delete(`http://localhost:8080/products/${id}`).then(() => {
-                window.alert("produt deleted successfully");
+                window.alert("product deleted successfully");
                 fetchData();
             }).catch((error) => { })
         }
@@ -86,6 +88,8 @@ const ProductDashComp = () => {
 
                                 <button type='button' onClick={() => deleteProduct(val.id)} className='btn btn-primary '>
                                     <DeleteIcon></DeleteIcon></button>
+
+                               
                             </tr>
                         })
                     }
