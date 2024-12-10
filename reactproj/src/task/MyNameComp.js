@@ -1,10 +1,12 @@
 import React from 'react'
 
 
-const MyNameComp = () => {
+const MyNameComp = (props) => {
     return (
         <div>
-          <h2>My name is SelvaBalaji</h2>  
+          <h2>This is MyName Component</h2>
+          <p>My Name is:{props.name}</p>  
+          <p>I am:{props.post}</p>  
         </div>
     )
 }

@@ -13,11 +13,11 @@ const LoginComp = () => {
     const checkUser = () => {
         let uid=uidRef.current.value;
         let upass=upassRef.current.value;
-        console.log(uid,upass);
+        // window.alert(uid,upass);
 
-        axios.get("http://localhost:8080/user").then((res) => {
+        axios.get("http://localhost:8080/users").then((res) => {
             
-            //console.log(res);
+           console.log(res);
            let currentUser= res.data.filter((val,index)=>{return val.userid===uid && val.userpass===upass})
             if(currentUser.length>0){
                 window.alert("login success");

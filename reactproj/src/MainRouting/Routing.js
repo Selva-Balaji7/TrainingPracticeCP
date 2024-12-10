@@ -1,5 +1,4 @@
 import {createBrowserRouter} from "react-router-dom";
-import LoginComp from "../Layout/LoginComp";
 import MainDashBoardComp from "../Layout/MainDashBoarComp";
 import MyFavColorComp from "../component/MyFavColorComp";
 import FormValComp from "../component/FormValComp";
@@ -11,6 +10,9 @@ import UseStateHooksComp from "../Hooks/UseStateHooks";
 import PageNotFoundComp from "../Layout/PageNotFoundComp";
 import ProductDashComp from "../Crud/ProductDashComp";
 import ProtectedRouting from "./ProtectedRouting";
+import LogoutComp from "../Layout/LogoutComp";
+import LoginComp from "../Layout/LoginComp";
+import DataListComp from "../reduxCode/DataListComp";
 
 
 
@@ -19,6 +21,8 @@ const routing = createBrowserRouter([
     {path:"",element:<LoginComp/>},
 
     {path:"loginComp",element:<LoginComp/>},
+
+    {path:"logout",element:<LogoutComp/>},
 
     {path:"maindashboard",element:<ProtectedRouting Component={MainDashBoardComp}/>, children:[
 
@@ -35,6 +39,7 @@ const routing = createBrowserRouter([
     ]},
     {path:"funccomp",element:<FuncComp/>},
     {path:"ProductDashComp",element:<ProductDashComp/>},
+    {path:"datalist",element:<DataListComp/>}
 
     ]},
     
