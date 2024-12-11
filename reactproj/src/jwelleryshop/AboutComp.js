@@ -5,7 +5,7 @@ import React from 'react';
 const AboutComp = () => {
   return (
     <div className="container mt-5">
-      <h2 className="text-center mb-4">About Rupesh Jewels</h2>
+      <h2 className="text-center mb-4">About SSS Jewels</h2>
 
       <p>
         SSS Jewels is a family-owned jewelry business committed to delivering timeless beauty and elegance.

@@ -5,12 +5,12 @@ const HomeComp = () => {
     
       <div className="home-background">
       <h2 className="text-center mb-4">Welcome to SSS Jewelleries</h2>
-      <pre>
+      <p>
         At SSS Jewels, there is a wide collection of exquisite and elegant jewels that
         made and combines with traditional craftsmanship with modern aesthetics. Come
         and Explore our stunning collection of bangles, necklaces, rings, and more to 
         find the perfect piece that complements your style.
-      </pre>
+      </p>
        <h3>Our jewelry Shop specialities</h3>
        
         <ul>

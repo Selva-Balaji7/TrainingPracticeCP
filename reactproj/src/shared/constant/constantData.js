@@ -20,7 +20,7 @@ import sss from '../../assests/sss.png'
 import bg from '../../assests/bg.jpg'
 const commonData={
     sss,bg,chain1,chain2,chain3,Bangle1,Bangle2,Bangle3,Bangle4,earring1,earring2,earring3,
-    earring4,earring5,necklace,necklace1,necklace2,necklace3,necklace4,necklace5,
+    earring4,earring5,necklace,necklace1,necklace2,necklace3,necklace4,necklace5
 
 }
 export default commonData;
