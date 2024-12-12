@@ -1,0 +1,10 @@
+<p>changeimage works!</p>
+<div>
+    <img [src]="imgPath" [alt]="altName" width="200px" height="200px">
+    <p>{{imgName}}</p>
+</div>
+
+<button type="button" class="btn" (click)="changeImage(1)">trees</button> 
+<button type="button" class="btn" (click)="changeImage(2)">nature</button>
+<button type="button" class="btn" (click)="changeImage(3)">man</button>
+<button type="button" class="btn" (click)="changeImage(4)">mount</button>

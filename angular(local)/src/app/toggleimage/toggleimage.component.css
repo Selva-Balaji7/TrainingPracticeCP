@@ -1,0 +1,21 @@
+#img1,#img2{
+  width: 314px;
+  height: 314px;
+  margin-top: 100px;
+  margin: auto;
+  }
+
+  .img-container{
+     border: 5px solid black;
+     width: 325px;
+     height: 325px;
+     margin-top: 100px;
+     margin: auto;
+  }
+  .btn-primary{
+     position: relative;
+     top: 100px;
+     left: 530px;
+     height: 66px;
+     width: 160px;
+  }
