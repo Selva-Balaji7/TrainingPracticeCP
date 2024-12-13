@@ -6,11 +6,12 @@ import { ParentComponent } from '../../parent/parent.component';
 import { ChildComponent } from '../../child/child.component';
 import { ProductDashComponent } from '../../Crud/product-dash/product-dash.component';
 import { ProductEdtComponent } from '../../Crud/product-edt/product-edt.component';
+import { ProuductAddComponent } from '../../Crud/prouduct-add/prouduct-add.component';
 
 
 @Component({
   selector: 'app-maindashboard',
-  imports: [RouterOutlet,NavComponent,FooterComponent,ParentComponent,ChildComponent,ProductDashComponent,ProductEdtComponent],
+  imports: [RouterOutlet,NavComponent,FooterComponent,ParentComponent,ChildComponent,ProductDashComponent,ProductEdtComponent,ProuductAddComponent],
   templateUrl: './maindashboard.component.html',
   styleUrl: './maindashboard.component.css'
 })
