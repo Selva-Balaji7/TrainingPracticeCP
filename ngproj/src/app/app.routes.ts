@@ -15,10 +15,11 @@ import { ProductDashComponent } from './Crud/product-dash/product-dash.component
 import { ItemComponent } from './item/item.component';
 import { ProuductAddComponent } from './Crud/prouduct-add/prouduct-add.component';
 import { ProductEdtComponent } from './Crud/product-edt/product-edt.component';
+import { authGuard } from './shared/custguard/auth.guard';
 
 export const routes: Routes = [
     //default routing
-    //{path:"",component:LoginComponent}
+    {path:"",component:LoginComponent},
     //redirecting routing
 
     {path:"",redirectTo:"login",pathMatch:"full"},
@@ -28,7 +29,7 @@ export const routes: Routes = [
     //parameterize routing
     {path:"mypipe/:id",component:MypipesComponent},
     //child routing
-    {path:"maindashboard",component:MaindashboardComponent,children:[
+    {path:"maindashboard",component:MaindashboardComponent,canActivate:[authGuard],children:[
         
         {path:"parent",component:ParentComponent},
         {path:"child",component:ChildComponent},

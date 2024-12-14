@@ -15,7 +15,7 @@ export class ProuductAddComponent {
     console.log(data);
     this._dbObj.addRecord("products",data).subscribe(()=>{
       window.alert("Product added successfully");
-      this._router.navigate(["/maindashboard/productaddmain"])
+      this._router.navigate(["/maindashboard/productadd"])
     })
   }
 

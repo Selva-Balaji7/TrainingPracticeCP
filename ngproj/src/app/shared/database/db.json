@@ -27,6 +27,20 @@
       "pprice": 500,
       "pcompany": "Toshiba",
       "pquantity": 30
+    },
+    {
+      "pname": "pendrive",
+      "pprice": "1000",
+      "pcompany": "Sandisk",
+      "pquantity": "4",
+      "id": "976f"
+    },
+    {
+      "id": "1d51",
+      "pname": "Tv",
+      "pprice": "5500",
+      "pcompany": "sony",
+      "pquantity": "1"
     }
   ],
   "users": [
