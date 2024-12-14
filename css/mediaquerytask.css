@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    overflow:scroll;
+    border: 2px solid red;
+        width: 20%;
+        height: 100px;
+        padding: 5px;
+        float: left;
+       
+}
+@media screen and (max-width:1200px) {
+      header{
+        background-color:blue;
+      }
+     
+}
+@media screen and (max-width:992px) {
+    header{
+        background-color: green;
+    }
+    div{ 
+            width: 25%;
+      }
+}
+@media screen and (max-width:768px) {
+   header{
+        background-color:yellow;
+   }
+   div{
+    
+        width: 33%;
+       
+      }
+}
+@media screen and (max-width:576px) {
+    header{
+        background-color:red;
+    }
+    div{
+            width: 100%;
+           
+          }
+       
+
+        
+      
+      }

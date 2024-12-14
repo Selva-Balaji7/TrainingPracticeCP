@@ -1,0 +1,42 @@
+
+body {
+    margin:0px;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    border-bottom: 5px solid black;
+    background-color: aqua;
+    height: 100px;
+   
+}
+.blocks{
+    border: 2px solid red;
+    width: 20%;
+    height: 100px;
+    padding: 5px;
+    float: left;
+}
+
+@media screen and (max-width:1200px) {
+    header{
+        background-color:blue;
+      }
+}
+@media screen and (max-width:992px) {
+    header{
+        background-color: green;
+      }
+}
+@media screen and (max-width:768px) {
+    header{
+        background-color:yellow;
+      }
+}
+@media screen and (max-width:576px) {
+    header{
+        background-color:red;
+      }
+}
+  
