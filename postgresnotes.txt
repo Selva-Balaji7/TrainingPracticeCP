@@ -1,0 +1,21 @@
+create table customers(
+id integer primary key,
+firstname varchar(50) not null,
+lastname varchar(50),
+email varchar(255) not null,
+birthday date not null);
+
+
+select * sort_demo_nulls;
+
+create table sort_demo_nulls(num int);
+insert into sort_demo_nulls
+values (1),(2),(3),(4),(null)
+
+select first_name,lenght(first_name) form customer;
+select * from sort_demo_nulls order by num;
+select * from sort_demo_nulls order by num nulls first;
+select * from sort_demo_nulls order by num desc nulls last;
+select distinct category_id from film_category;
+select count(*) from film_category;
+select count(distinct category_id) from film_category;

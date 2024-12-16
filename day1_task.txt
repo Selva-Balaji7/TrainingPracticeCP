@@ -1,0 +1,228 @@
+where clause
+1) >
+select * from customer
+where address_id>600;
+ customer_id | store_id | first_name | last_name |                email                | address_id | activebool | create_date |       last_update       | active 
+-------------+----------+------------+-----------+-------------------------------------+------------+------------+-------------+-------------------------+--------
+         524 |        1 | Jared      | Ely       | jared.ely@sakilacustomer.org        |        530 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           1 |        1 | Mary       | Smith     | mary.smith@sakilacustomer.org       |          5 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           2 |        1 | Patricia   | Johnson   | patricia.johnson@sakilacustomer.org |          6 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           3 |        1 | Linda      | Williams  | linda.williams@sakilacustomer.org   |          7 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           4 |        2 | Barbara    | Jones     | barbara.jones@sakilacustomer.org    |          8 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           5 |        1 | Elizabeth  | Brown     | elizabeth.brown@sakilacustomer.org  |          9 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           6 |        2 | Jennifer   | Davis     | jennifer.davis@sakilacustomer.org   |         10 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           7 |        1 | Maria      | Miller    | maria.miller@sakilacustomer.org     |         11 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           8 |        2 | Susan      | Wilson    | susan.wilson@sakilacustomer.org     |         12 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           9 |        2 | Margaret   | Moore     | margaret.moore@sakilacustomer.org   |         13 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+		   
+2)select * from customer 
+where  address_id<10;
+
+ customer_id | store_id | first_name | last_name |                email                | address_id | activebool | create_date |       last_update       | active 
+-------------+----------+------------+-----------+-------------------------------------+------------+------------+-------------+-------------------------+--------
+           1 |        1 | Mary       | Smith     | mary.smith@sakilacustomer.org       |          5 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           2 |        1 | Patricia   | Johnson   | patricia.johnson@sakilacustomer.org |          6 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           3 |        1 | Linda      | Williams  | linda.williams@sakilacustomer.org   |          7 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           4 |        2 | Barbara    | Jones     | barbara.jones@sakilacustomer.org    |          8 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           5 |        1 | Elizabeth  | Brown     | elizabeth.brown@sakilacustomer.org  |          9 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+(5 rows)
+
+
+3)>=
+select * from customer 
+where  customer_id>=590;
+customer_id | store_id | first_name | last_name |                 email                 | address_id | activebool | create_date |       last_update       | active 
+-------------+----------+------------+-----------+---------------------------------------+------------+------------+-------------+-------------------------+--------
+         590 |        2 | Seth       | Hannon    | seth.hannon@sakilacustomer.org        |        596 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+         591 |        1 | Kent       | Arsenault | kent.arsenault@sakilacustomer.org     |        597 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+         592 |        1 | Terrance   | Roush     | terrance.roush@sakilacustomer.org     |        598 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      0
+         593 |        2 | Rene       | Mcalister | rene.mcalister@sakilacustomer.org     |        599 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+         594 |        1 | Eduardo    | Hiatt     | eduardo.hiatt@sakilacustomer.org      |        600 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+         595 |        1 | Terrence   | Gunderson | terrence.gunderson@sakilacustomer.org |        601 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+         596 |        1 | Enrique    | Forsythe  | enrique.forsythe@sakilacustomer.org   |        602 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+         597 |        1 | Freddie    | Duggan    | freddie.duggan@sakilacustomer.org     |        603 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+         598 |        1 | Wade       | Delvalle  | wade.delvalle@sakilacustomer.org      |        604 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+         599 |        2 | Austin     | Cintron   | austin.cintron@sakilacustomer.org     |        605 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+
+
+4)<=
+select * from customer 
+where  customer_id<=10;
+customer_id | store_id | first_name | last_name |                email                | address_id | activebool | create_date |       last_update       | active 
+-------------+----------+------------+-----------+-------------------------------------+------------+------------+-------------+-------------------------+--------
+           1 |        1 | Mary       | Smith     | mary.smith@sakilacustomer.org       |          5 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           2 |        1 | Patricia   | Johnson   | patricia.johnson@sakilacustomer.org |          6 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           3 |        1 | Linda      | Williams  | linda.williams@sakilacustomer.org   |          7 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           4 |        2 | Barbara    | Jones     | barbara.jones@sakilacustomer.org    |          8 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           5 |        1 | Elizabeth  | Brown     | elizabeth.brown@sakilacustomer.org  |          9 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           6 |        2 | Jennifer   | Davis     | jennifer.davis@sakilacustomer.org   |         10 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           7 |        1 | Maria      | Miller    | maria.miller@sakilacustomer.org     |         11 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           8 |        2 | Susan      | Wilson    | susan.wilson@sakilacustomer.org     |         12 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           9 |        2 | Margaret   | Moore     | margaret.moore@sakilacustomer.org   |         13 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+          10 |        1 | Dorothy    | Taylor    | dorothy.taylor@sakilacustomer.org   |         14 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+		  
+
+5) <> or !=
+select first_name,last_name,store_id from customer
+where store_id<>1
+limit 10;
+
+first_name | last_name | store_id 
+------------+-----------+----------
+ Barbara    | Jones     |        2
+ Jennifer   | Davis     |        2
+ Susan      | Wilson    |        2
+ Margaret   | Moore     |        2
+ Lisa       | Anderson  |        2
+ Karen      | Jackson   |        2
+ Betty      | White     |        2
+ Sandra     | Martin    |        2
+ Carol      | Garcia    |        2
+ Sharon     | Robinson  |        2
+
+6)=
+select * from customer
+where customer_id=524;
+
+
+ customer_id | store_id | first_name | last_name |            email             | address_id | activebool | create_date |       last_update       | active 
+-------------+----------+------------+-----------+------------------------------+------------+------------+-------------+-------------------------+--------
+         524 |        1 | Jared      | Ely       | jared.ely@sakilacustomer.org |        530 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+
+7) not:
+select first_name,email from customer
+where not activebool=true;
+
+ first_name | email 
+------------+-------
+(0 rows)
+
+8) and:
+select first_name,last_name,create_date from customer
+where customer_id=15 and address_id=19;
+ first_name | last_name | create_date 
+------------+-----------+-------------
+ Helen      | Harris    | 2006-02-14
+(1 row)
+
+
+9)Or:
+
+select first_name, last_name from customer
+where customer_id=337 or address_id=337;
+
+ first_name | last_name 
+------------+-----------
+ Stephen    | Qualls
+ Jerry      | Jordon
+ 
+10)in:
+select * from customer
+where customer_id in(55,64,70);
+
+customer_id | store_id | first_name | last_name |                email                 | address_id | activebool | create_date |       last_update       | active 
+-------------+----------+------------+-----------+--------------------------------------+------------+------------+-------------+-------------------------+--------
+          55 |        2 | Doris      | Reed      | doris.reed@sakilacustomer.org        |         59 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+          64 |        2 | Judith     | Cox       | judith.cox@sakilacustomer.org        |         68 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      0
+          70 |        2 | Christina  | Ramirez   | christina.ramirez@sakilacustomer.org |         74 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+(3 rows)
+
+11)not in:
+select * from customer 
+where customer_id not in(1,2,3,4,5,6,10,12,14)
+limit 10;
+
+customer_id | store_id | first_name | last_name |               email               | address_id | activebool | create_date |       last_update       | active 
+-------------+----------+------------+-----------+-----------------------------------+------------+------------+-------------+-------------------------+--------
+         524 |        1 | Jared      | Ely       | jared.ely@sakilacustomer.org      |        530 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           7 |        1 | Maria      | Miller    | maria.miller@sakilacustomer.org   |         11 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           8 |        2 | Susan      | Wilson    | susan.wilson@sakilacustomer.org   |         12 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+           9 |        2 | Margaret   | Moore     | margaret.moore@sakilacustomer.org |         13 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+          11 |        2 | Lisa       | Anderson  | lisa.anderson@sakilacustomer.org  |         15 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+          13 |        2 | Karen      | Jackson   | karen.jackson@sakilacustomer.org  |         17 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+          15 |        1 | Helen      | Harris    | helen.harris@sakilacustomer.org   |         19 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+          16 |        2 | Sandra     | Martin    | sandra.martin@sakilacustomer.org  |         20 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      0
+          17 |        1 | Donna      | Thompson  | donna.thompson@sakilacustomer.org |         21 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+          18 |        2 | Carol      | Garcia    | carol.garcia@sakilacustomer.org   |         22 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+(10 rows)
+
+12)between:
+select first_name,store_id,address_id
+from customer
+where address_id between 20 and 24;
+
+first_name | store_id | address_id 
+------------+----------+------------
+ Sandra     |        2 |         20
+ Donna      |        1 |         21
+ Carol      |        2 |         22
+ Ruth       |        1 |         23
+ Sharon     |        2 |         24
+(5 rows)
+
+13)not between:
+select first_name,store_id,address_id
+from customer
+where address_id not between 1 and 600;
+
+first_name | store_id | address_id 
+------------+----------+------------
+ Terrence   |        1 |        601
+ Enrique    |        1 |        602
+ Freddie    |        1 |        603
+ Wade       |        1 |        604
+ Austin     |        2 |        605
+(5 rows)
+
+14)Like:
+select first_name from customer
+where first_name like 'S%n';
+ first_name 
+------------
+ Susan
+ Sharon
+ Shannon
+ Steven
+ Stephen
+ Shawn
+ Sean
+(7 rows)
+
+15)not like:
+select first_name from customer
+where first_name not like '%n'
+limit 5;
+ first_name 
+------------
+ Jared
+ Mary
+ Patricia
+ Linda
+ Barbara
+(5 rows)
+
+16)is null:
+select email from customer
+where store_id is null;
+ email 
+-------
+(0 rows)
+
+17)not is null:
+select * from customer
+
+
+ customer_id | store_id | first_name | last_name |            email             | address_id | activebool | create_date |       last_update       | active 
+-------------+----------+------------+-----------+------------------------------+------------+------------+-------------+-------------------------+--------
+         524 |        1 | Jared      | Ely       | jared.ely@sakilacustomer.org |        530 | t          | 2006-02-14  | 2013-05-26 14:49:45.738 |      1
+(1 row)
+
+
+
+
+
+
+
+
+
+
