@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const JewelPageNotFound = () => {
   return (
     <div>
@@ -8,4 +9,4 @@ const JewelPageNotFound = () => {
   )
 }
 
-export default JewelPageNotFound
+export default JewelPageNotFound;

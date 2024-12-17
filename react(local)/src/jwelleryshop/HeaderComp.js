@@ -3,8 +3,9 @@ import commonData from "../shared/constant/constantData";
 const HeaderComp=()=>{
    return(
      <div className="header">
-          <img src={commonData.sss} alt="logo" />
-          <h1>SSS jewellery</h1>
+          <img src={commonData.newlogo} alt="logo" /> 
+          <h2>SSS Jewelleries</h2>
+        
      </div>
        
    );

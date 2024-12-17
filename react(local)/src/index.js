@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
- import routing from './jwelleryshop/JewelRouting';
+import routing from './jwelleryshop/JewelRouting';
 import { RouterProvider } from 'react-router-dom';
 import JewelRouting from './jwelleryshop/JewelRouting';
 
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App> */}
-    <RouterProvider router={routing}></RouterProvider>
+    <RouterProvider router={JewelRouting}></RouterProvider>
   </React.StrictMode>
 );
 
