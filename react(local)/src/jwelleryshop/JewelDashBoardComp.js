@@ -1,29 +1,33 @@
 
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import HeaderComp from './HeaderComp';
 import JewelNavComp from '../jwelleryshop/JewelNavComp';
 import JewelFooterComp from '../jwelleryshop/JewelFooterCamp';
+
 const JewelDashBoardComp = () => {
   return (
-    <div>
-      <header className="bg-light py-3">
-      <div className="container1 d-flex align-items-center justify-content-center">
-        
-        {/* <img src={RupeshJewels} alt="Rupesh Jewels" className="me-2" style={{ width: '50px', height: '50px',borderRadius: '50%', marginRight: '10px' }} /> */}
-  
-        <h1 className="text-success"><strong>SSS Jewels</strong></h1>
-      </div>
-    </header>
-      <JewelNavComp >
-        
-      </JewelNavComp>
-      <main className="container border mt-3 p-4">
-        <Outlet />
-      </main>
-      <div>
-        <JewelFooterComp/>
-      </div>
+    <>
+    <div class="card">
+        <div className="card header">
+            <HeaderComp></HeaderComp>
+        </div>
+   </div>
+    <div className="card text-center">
+    <div className="card-header">
+       <JewelNavComp></JewelNavComp>
     </div>
+    <div className="custom-card-body" >
+      <div className="card-body">
+        <Outlet></Outlet>
+      </div>
+</div>
+    <div className="card-footer text-body-secondary">
+       <JewelFooterComp></JewelFooterComp>
+    </div>
+  </div>
+  </>
+  
   );
 };
 

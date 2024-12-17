@@ -1,12 +1,14 @@
 import { red} from '@mui/material/colors'
 import React from 'react'
+import commonData from '../shared/constant/constantData';
 
 const JewelFooterComp = () => {
   return (
-    <div>
-      <h2 className='text-primary' style={{float:"right",color:"red"}}>This is developed by <strong>Selva Balaji</strong></h2>
+    <div className='footer'>
+       <h2>Developed by Selva Balaji S</h2>
     </div>
+   
   )
 }
 
-export default JewelFooterComp
+export default JewelFooterComp;

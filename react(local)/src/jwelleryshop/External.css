@@ -1,98 +1,69 @@
-/* .header h1{
-   
-}*/
 .header{
- background-image: url(../assests/bg.jpg);
-}
-   
-
-/* .header img{
-    display: flex;
-    height: 81px;
-    width: 87px;
-    border-radius: 50%;
-    position: relative;
-    left: 92px;
-    bottom: -17px;
-}
-.home-background{
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-h2 {
-    color: #8B0000; 
-    margin-bottom: 20px;
-  }
-  
-  h3 {
-    color: #333;
-    margin-top: 30px;
-  }
-p{
-    justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  padding: 10px;
+  height: 120px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-  }
-  
-  ul li {
-    margin: 10px 0;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  ul li strong {
-    color: #8B0000;
-  }
-  @media (max-width: 768px) {
-    .home-background {
-      padding: 15px;
-      margin: 10px;
-    }
-  
-    pre {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 16px;
-        line-height: 1.5;
-        white-space: pre-wrap;
-        color: #555;
-        background-color: #f4f4f4;
-        padding: 15px;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-      }
-  
-    ul li {
-      font-size: 14px;
-    }
-  }
-  
-.container{
- height: 100%;
- width:100% ;
-}
-h1{
-    display: flex;
-    font-family:'Lucida Sans Unicode';
+ .header img{
+  height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   box-shadow: -3px 7px 50px -4px;
+   position: relative;
+   right: 45px;
+} 
+.header h2{
+  font-size: xxx-large;
     font-style: oblique;
-    color: red;
-    font-weight: bold;
-    margin-left: 350px;
-    margin-top: -47px;
-    
+    font-weight: 800;
+    font-family: math;
+
 }
-.card {
-    border: 1px solid #8B0000;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin: 10px;
-    background-color: #fff;
-  } */ 
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:gold;
+  height: 100px;
+}
+.footer h2{
+  
+  font-size: x-large;
+  font-style: oblique;
+  font-weight: 800;
+  font-family: math;
+  color:black;
+  
+  
+}
+
+.custom-card-body {
+  height: 1000px; 
+}
+
+@media (max-width: 1200px) {
+  .responsive-card {
+    height: 200px; 
+  }
+}
+.carousel-inner img {
+  height: 460px;
+   width: 100vw !important;
+    border-radius: inherit; 
+}
+.homelist{
+  list-style-type:none;
+}
+.product-page{
+  display: block;
+  align-items:center;
+}
+
+.product-page h3{
+  font-style: italic;
+  font-family: revert-layer;
+  float: inline-start; 
+}
