@@ -1,0 +1,62 @@
+ZAP
+
+2: ZAP Installing Dynamic SSL Certificate.
+Step 1: Open the OWASP ZAP Tool
+Step 2: Click on no, I do not want to persist the session of now
+             Click on Remember my choice.
+Step 3: Go to Tools options-----🡪Options--🡪Dynamic SSL Certificate -🡪Save it--🡪Select a folder🡪cancle/ok
+Step 4: Close the OWASP ZAP tool and open Firefox browser
+Go to setting------🡪privacy and security -----🡪view certificates---🡪import button-🡪select the folder🡪add certificate🡪trusted certificate click it🡪import it successfully 
+
+title : ZAPNetwork
+ 
+localhost
+ 
+8081
+ 
+Go to new tab of firefox browser now, open any website, parallel open OWASP ZAP tool with that and see no recording is going on but, when you will enable the ZAPNetwork from Firefox browser extension then, it will show that Network as well as start recordings also.
+ 
+Extension----🡪click on ZAPNetwork, Refresh that website again, then it will record all requests.
+Actually we are intercepting login request ... by Unknown User
+3:24 PM
+Actually we are intercepting login request here,
+Now here, we are able to see the credential, and if we changed the password from zap tool then, your credentials will be changed and you will not able to open the application, this is often called Man-In-The-Middle-Attack.
+Note: Try for the application to which you ... by Unknown User
+
+3:25 PM
+Note: Try for the application to which you have the permission , please don't try for anyone else account.
+has context menu
+
+
+Intercepting Specific Requests with OWASP ZAP
+ 
+Step 1 : Example: Intercepting a specific api request with zap tool.
+ 
+Step 1: Open Firefox browser----🡪enable FroxyProxy ZAP Network----🡪Open Zap Tool-----🡪Open hematite quiz app on firefox-----🡪On zap tool, It will start recodring all requests.
+ 
+Click on questions tab : zap
+
+Here If I chaged the String, then in the quiz app the question tab/ api will not work.
+And in information window, you will see new tab added that is breakpoint, where you can see all added breakpoints.
+ 
+Note: Do not perfornm practically it will change the settings in Quiz App.
+ 
+ 
+Manual Explore for Vulnerability Assessment in OWASP ZAP
+Step 1: Open zap -🡪click on Manual Explore option on the workbench
+
+Spidering a website with OWASP ZAP
+ 
+Spidering allows you to launch an automated scan against an application.
+Spider explores by findings links in html pages.
+It begins with set of URLs called Seeds
+The Spider then visits these URL’s, identifies all the hyperlinks in the pages.
+Add them to the list of URLs to visit
+The process continues recursively as long as new resources are found
+ 
+Step 1: Open zap tool
+Click on plus icon in the information window and click on spider.
+Click on new scan, spider dialog window
+ 
+
+
