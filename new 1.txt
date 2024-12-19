@@ -1,0 +1,148 @@
+Appium is a tool used for UI automation testing
+ 
+Pre-requisite for appium : Install node js and npm.
+ 
+appium -v
+ 
+Start appium appium
+ 
+1.Appium download.
+Run following command on cmd
+npm install  -g appium.
+
+2.Appium deskstop client download
+https://github.com/appium/appium-desktop/releases/tag/v1.8.2
+download below setup.
+appium-desktop-setup-1.8.2.exe
+
+To update appium : npm install -g npm@10.2.0
+
+appium
+ 
+appium doctor : install appium-doctor -g 
+ 
+npm install appium-doctor –g
+ 
+appium-doctor -h
+ 
+appium-doctor --android
+ 
+Next configure the environment for android device.
+ 
+Download SDK tool
+https://developer.android.com/studio
+ 
+Software development kit
+
+
+ 
+Keep downloaded sdk tool zip file in specific folder and unzip it
+ 
+https://developer.android.com/tools
+ 
+cmdlines-tools
+ 
+Create a cmdlines-tools on c driver inside it create latest folder and keep all sources in it
+ 
+ 
+ 
+
+jdk 8 download and set path with environmental variables
+
+In cmd:sdkmanager "platform-tools" "platforms; android-34" -- (check android api level with android version history)
+Check android version of your phone
+settings -about phone->System management ->android version
+
+Control panel->system variavble->Android_Home = c: \cmdline-tools
+path = C: \cmdline-tools\platform-tools
+
+
+cmd - adb devices
+Android Debug Bridge(adb) to connect device wit system
+Mrinal ks has joined the conversation.
+Monica
+Make device ready
+• Enable developer mode
+• Make USB Debugging on
+Open your mobile
+device settings phone-- Build number about you have to tap 7 times on it(then it will be enable for developer mode) Then when you go back to settings(mobile) after sometime you will see developer options--- USB debugging make it on
+• You can connect device to computer system through USB cable
+• If asked enable USB Debbugging
+
+
+1. Open the Settings Menu
+• Locate and tap the Settings app on your device.
+2. Navigate to About Phone
+• Scroll down and tap About Phone or About Device.
+(On some devices, you might need to tap System > About Phone.)
+3. Find Build Number
+• Look for the Build Number entry in the list.
+It is usually found under a section like Software Information or directly listed in
+
+Open Eclipse->Create a Maven project->Add plugin (TestNG)
+
+AppiumSetup
+src/test/java ->com.appiumtest under this package add class BaseClass
+
+package Tests;
+import java.net.URL;
+import org.openqa.selenium.remot e. DesiredCapabilities;
+import org.testng.annotations. AfterTest; import org.testng.annotations. Before Test; import org.testng.annotations. Test;
+import io.appium.java_client.Appiu mDriver;
+import io.appium.java_client.andro id.Android Driver; import io.appium.java_client.remo te. MobileCapability Type;
+public class BaseClass {
+AppiumDriver driver;
+@BeforeTest public void setup() { try { Desired Capabilities caps = new Desired Capabilities():
+
+// Platform Name
+caps.setCapability(MobileCap abilityType.PLATFORM_NAME, "Android");
+// Platform Version
+caps.setCapability (MobileCapa bilityType. PLATFORM_VERSION, "11.0");
+// Device Name
+caps.setCapability(MobileCapa bility Type.DEVICE_NAME, "Vivo V20");
+// Unique Device Identifier caps.setCapability(Mob ileCapability Type. UDID, "123456789ABCDEF"); // Replace with actual UDID
+// Automation Name caps.setCapability (MobileCapa bilityType.AUTOMATION_NAME, "UiAutomator2");
+// // Appium Server URL
+URL url = new URL("http://127.0.0 1:4723/wd/hub");
+// Initialize the Appium Driver driver = new Android Driver<>(url, caps);
+} catch (Exception exp) { System.out.println("Error cause is: " + exp.getCause()); System.out.println("Message is: " + exp.getMessage()); exp.printStackTrace(); throw new RuntimeException("Driver setup failed!"); } }
+@Test
+public void testExample() {
+// Example test logic System.out.println("Driver is running: " + (driver != null)); }
+@AfterTest
+public void teardown() {
+failed!");
+}
+}
+@Test
+public void testExample() {
+// Example test logic System.out.println("Driver is running: " + (driver != null)); }
+@AfterTest
+public void teardown() {
+// Quit the driver after tests
+if (driver != null) {
+driver.quit();
+}
+}
+}
+shift + ctrl +0
+Right click on maven
+project->buildpath->configure build
+path->Libraries->Add Libraries
+->TestNG->Apply and close
+
+
+<!-- Appium Java Client -->
+<dependency>
+<groupId>io.appium</groupId>
+<artifactId>java-client</artifactId>
+<version>8.5.1</version>
+</dependency>
+<!-- Selenium ->
+<dependency>
+<groupId>org.sele
+niumhq.selenium</
+groupId>
+<artifactId>selenium-java</ artifactId>
+<version>4.11.0</version>
+</dependency>
