@@ -5,21 +5,21 @@ namespace dotnetturtorials
     class Program
     {
         int numid;
-         public static void Main(string[] args)
-        {
-            Console.WriteLine("hi");
-            Console.Write("Hello, World!");
+        // public static void Main(string[] args)
+        //{
+        //    Console.WriteLine("hi");
+        //    Console.Write("Hello, World!");
           
-            int id = 1;
-            string name = "selva balaji";
-            double height = 5.5;
-            bool isMarried = false;
-            Console.WriteLine(name + "id is" + id + "and height is:" + height);
-            Console.WriteLine("Marital Status:" + isMarried);
-            Console.ReadKey();
+        //    int id = 1;
+        //    string name = "selva balaji";
+        //    double height = 5.5;
+        //    bool isMarried = false;
+        //    Console.WriteLine(name + "id is" + id + "and height is:" + height);
+        //    Console.WriteLine("Marital Status:" + isMarried);
+        //    Console.ReadKey();
            
 
-        }
+        //}
     
     
     }

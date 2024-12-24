@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\selva.balaji\\Desktop\\.NET\\.vs\\Demo\\Demo.csproj": {}
+    "C:\\Users\\selva.balaji\\Desktop\\.NET\\Demo\\Demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\selva.balaji\\Desktop\\.NET\\.vs\\Demo\\Demo.csproj": {
+    "C:\\Users\\selva.balaji\\Desktop\\.NET\\Demo\\Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\selva.balaji\\Desktop\\.NET\\.vs\\Demo\\Demo.csproj",
+        "projectUniqueName": "C:\\Users\\selva.balaji\\Desktop\\.NET\\Demo\\Demo.csproj",
         "projectName": "Demo",
-        "projectPath": "C:\\Users\\selva.balaji\\Desktop\\.NET\\.vs\\Demo\\Demo.csproj",
+        "projectPath": "C:\\Users\\selva.balaji\\Desktop\\.NET\\Demo\\Demo.csproj",
         "packagesPath": "C:\\Users\\selva.balaji\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\selva.balaji\\Desktop\\.NET\\.vs\\Demo\\obj\\",
+        "outputPath": "C:\\Users\\selva.balaji\\Desktop\\.NET\\Demo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\selva.balaji\\AppData\\Roaming\\NuGet\\NuGet.Config",

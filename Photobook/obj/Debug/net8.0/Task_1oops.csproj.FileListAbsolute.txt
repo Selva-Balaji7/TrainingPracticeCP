@@ -1,0 +1,15 @@
+C:\Users\selva.balaji\Desktop\.NET\Photobook\bin\Debug\net8.0\Task_1oops.exe
+C:\Users\selva.balaji\Desktop\.NET\Photobook\bin\Debug\net8.0\Task_1oops.deps.json
+C:\Users\selva.balaji\Desktop\.NET\Photobook\bin\Debug\net8.0\Task_1oops.runtimeconfig.json
+C:\Users\selva.balaji\Desktop\.NET\Photobook\bin\Debug\net8.0\Task_1oops.dll
+C:\Users\selva.balaji\Desktop\.NET\Photobook\bin\Debug\net8.0\Task_1oops.pdb
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\Task_1oops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\Task_1oops.AssemblyInfoInputs.cache
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\Task_1oops.AssemblyInfo.cs
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\Task_1oops.csproj.CoreCompileInputs.cache
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\Task_1oops.sourcelink.json
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\Task_1oops.dll
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\refint\Task_1oops.dll
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\Task_1oops.pdb
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\Task_1oops.genruntimeconfig.cache
+C:\Users\selva.balaji\Desktop\.NET\Photobook\obj\Debug\net8.0\ref\Task_1oops.dll

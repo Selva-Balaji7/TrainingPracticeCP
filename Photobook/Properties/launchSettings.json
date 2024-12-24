@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Photobook": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
