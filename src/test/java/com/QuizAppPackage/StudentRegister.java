@@ -1,22 +1,17 @@
 package com.QuizAppPackage;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+
 
 public class StudentRegister {
 
 	public static void main(String[] args) throws InterruptedException {
 		 
 			 WebDriver driver =new EdgeDriver();
-            driver.get("http://quiz-fe-test.hematitecorp.com");
-            
-	        
-	        
-//	        System.out.println(driver.getTitle());
-//	        System.out.println(driver.getCurrentUrl());
-//	        System.out.println(driver.getPageSource());
-//	        
+            driver.get("http://quiz-fe-test.hematitecorp.com");  
 //	        driver.navigate().to("http://quiz-fe-test.hematitecorp.com");
 //	        driver.get("http://quiz-fe-test.hematitecorp.com/signup");
 //	        
@@ -29,7 +24,7 @@ public class StudentRegister {
 //	       driver1.manage().window().minimize();
 //	        driver1.manage().window().setSize(new Dimension(1024,768));
             
-            Thread.sleep(10000);
+            Thread.sleep(5000);
             driver.findElement(By.id("basic-menu")).click();
             driver.findElement(By.xpath("//li[@tabindex=\"0\" and @role=\"menuitem\"]")).click();
             Thread.sleep(2000);
@@ -40,8 +35,10 @@ public class StudentRegister {
             driver.findElement(By.name("password")).sendKeys("selva123");
             driver.findElement(By.name("password2")).sendKeys("selva123");
             driver.findElement(By.id("demo-simple-select-autowidth-label")).click();
-            
-            
+            driver.findElement(By.xpath("//li[@data-value='student']")).click();
+            driver.findElement(By.xpath("//input[@value='male']")).click();
+            driver.findElement(By.xpath("//button[ @type='submit']")).click();
+
             driver.close();
 	        
 	
