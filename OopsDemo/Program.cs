@@ -1,7 +1,7 @@
 ﻿
 namespace OopsDemo
 {
-    internal class Program
+     internal class Program
     {
         private static void Main(string[] args)
         {
@@ -27,6 +27,8 @@ namespace OopsDemo
             CurrentAccount c4=new CurrentAccount();
             c4.TotalAmount = 300000;
             Console.WriteLine(c4.GetTotalAmount());
+            //Console.ReadKey();
+
 
            
         }

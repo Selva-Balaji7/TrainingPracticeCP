@@ -4,7 +4,7 @@ using System;
 
 namespace photobook
 {
- internal class Photobook
+  internal class Photobook
  {
     protected int numpages;
 
@@ -25,7 +25,7 @@ namespace photobook
  }
 class BigphotoBook : Photobook
 {
-  
+   
 
     public BigphotoBook()
     {
@@ -37,16 +37,17 @@ class BigphotoBook : Photobook
 
     internal class PhotobookTest
     {
-    public static void Main(string[] args)
-    { 
-    BigphotoBook book= new BigphotoBook();
-
+      public static void Main(string[] args)
+      {
+       
+       Photobook ph = new Photobook();
+       Console.WriteLine(ph.GetNumberPages());
+       Photobook ph1 = new Photobook(24);
+       Console.WriteLine(ph1.GetNumberPages());
+       BigphotoBook book= new BigphotoBook();
        Console.WriteLine(book.GetNumberPages());
-     Photobook ph = new Photobook();
-      Console.WriteLine(ph.GetNumberPages());
-     Photobook ph1= new Photobook(24);
-     Console.WriteLine(ph1.GetNumberPages());
-    }
+     
+      }
 
     }
 
