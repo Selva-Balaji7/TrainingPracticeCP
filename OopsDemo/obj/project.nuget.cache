@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zp2597gMGCg=",
+  "dgSpecHash": "BB42LfETriE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\selva.balaji\\Desktop\\.NET\\OopsDemo\\OopsDemo.csproj",
+  "projectFilePath": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\OopsDemo\\OopsDemo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\selva.balaji\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+    "C:\\Users\\tharu\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
   ],
   "logs": []
 }

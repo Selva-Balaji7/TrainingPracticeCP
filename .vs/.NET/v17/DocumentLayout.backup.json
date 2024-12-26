@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\selva.balaji\\Desktop\\.NET\\",
   "Documents": [
     {
@@ -11,10 +12,15 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OopsDemo\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\",
+  "Documents": [],
+>>>>>>> d8165c791906bf8b38a573a50803d17805a686e8
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< HEAD
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -49,6 +55,9 @@
           ]
         }
       ]
+=======
+      "DocumentGroups": []
+>>>>>>> d8165c791906bf8b38a573a50803d17805a686e8
     }
   ]
 }
