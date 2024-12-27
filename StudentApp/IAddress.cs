@@ -10,8 +10,7 @@ namespace StudentApp
     {
         string City { get; set; }
         string State { get; set; }
-
-        long Zipcode { get; set; }
+        int Zipcode { get; set; }
 
         public string showAddress();
 

@@ -14,8 +14,7 @@ namespace StudentApp
         public char gender { get; set; }
         public string City { get; set; }
         public string State { get; set; }
-        public long Zipcode  { get; set; }
-         
+        public int Zipcode { get; set; }
         public long mobile { get; set; }
 
         public string email { get; set; }
