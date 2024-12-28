@@ -10,9 +10,9 @@ namespace StudentApp
     internal class StringFunctions
     {
         string name = "Selva S Balaji";
-        string msg = "welcome";
-        string city1= "kanchipuram";
-        string city2 = "Kanchipuram";
+        //string msg = "welcome";
+        //string city1= "kanchipuram";
+        //string city2 = "Kanchipuram";
 
         public void showStringMethods()
         {
@@ -32,29 +32,16 @@ namespace StudentApp
             //Console.WriteLine("equals method:" + city1.Equals(city2,StringComparison.OrdinalIgnoreCase));
             //Console.WriteLine("indexof:{0}", name.IndexOf(" "));
             //Console.WriteLine("lastindexof:{0}", name.LastIndexOf(" "));
-            char[] ch = city1.ToCharArray();
-            foreach(char c in ch) Console.WriteLine(c);
+            //char[] ch = city1.ToCharArray();
+            //foreach(char c in ch) Console.WriteLine(c);
             string[] s1 = name.Split(' ');
-            foreach(string s in s1) Console.WriteLine(s);
-            Console.WriteLine(string.Join("",s1));
+            foreach (string s in s1) Console.WriteLine(s);
+            Console.WriteLine(string.Join("", s1));
             Console.WriteLine(string.Join(",", s1));//using separator
-            Console.WriteLine("Enter the name:");
-            Console.WriteLine("Replace:" + name.Replace("Selva", "Tharun", StringComparison.OrdinalIgnoreCase));
-            //string uname = Console.ReadLine();
-            //string[] s2 = uname.Split(' ');
-            //for (int i = 0; i < s2.Length; i++)
-            //{
-            //     s2[i] = s2[i].ToLower().Replace(s2[i][0].ToString(), s2[i][0].ToString().ToUpper());
-            //    Console.WriteLine(s2[i] + uname.Substring(1));
-            //}
-
-
+            Console.ReadLine();
+            //Console.WriteLine("Enter the name:");
+            //Console.WriteLine("Replace:" + name.Replace("Selva", "Tharun", StringComparison.OrdinalIgnoreCase));
             
-
-
-
-
-
 
 
         }

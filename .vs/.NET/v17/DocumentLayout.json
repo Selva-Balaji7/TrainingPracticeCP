@@ -1,21 +1,28 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "C:\\Users\\selva.balaji\\Desktop\\.NET\\",
+  "WorkspaceRootPath": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\OopsDemo\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OopsDemo\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\Stringtask3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentApp\\Stringtask3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\OopsDemo\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\Stringtask2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentApp\\Stringtask2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\Stringtask1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentApp\\Stringtask1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\OopsDemo\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OopsDemo\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\StringFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentApp\\StringFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
-=======
-  "WorkspaceRootPath": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\",
-  "Documents": [],
->>>>>>> d8165c791906bf8b38a573a50803d17805a686e8
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -23,32 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\OopsDemo\\Program.cs",
-              "RelativeDocumentMoniker": "OopsDemo\\Program.cs",
-              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\OopsDemo\\Program.cs",
-              "RelativeToolTip": "OopsDemo\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Title": "Stringtask2.cs",
+              "DocumentMoniker": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\Stringtask2.cs",
+              "RelativeDocumentMoniker": "StudentApp\\Stringtask2.cs",
+              "ToolTip": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\Stringtask2.cs",
+              "RelativeToolTip": "StudentApp\\Stringtask2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T05:23:00.411Z",
+              "WhenOpened": "2024-12-27T16:29:50.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\OopsDemo\\Program.cs",
+              "RelativeDocumentMoniker": "OopsDemo\\Program.cs",
+              "ToolTip": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\OopsDemo\\Program.cs",
+              "RelativeToolTip": "OopsDemo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T16:10:18.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Stringtask1.cs",
+              "DocumentMoniker": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\Stringtask1.cs",
+              "RelativeDocumentMoniker": "StudentApp\\Stringtask1.cs",
+              "ToolTip": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\Stringtask1.cs",
+              "RelativeToolTip": "StudentApp\\Stringtask1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T04:52:18.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StringFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\StringFunctions.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StringFunctions.cs",
+              "ToolTip": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\StringFunctions.cs",
+              "RelativeToolTip": "StudentApp\\StringFunctions.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T16:35:31.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "student.cs",
-              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\OopsDemo\\student.cs",
-              "RelativeDocumentMoniker": "OopsDemo\\student.cs",
-              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\OopsDemo\\student.cs",
-              "RelativeToolTip": "OopsDemo\\student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Title": "Stringtask3.cs",
+              "DocumentMoniker": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\Stringtask3.cs",
+              "RelativeDocumentMoniker": "StudentApp\\Stringtask3.cs",
+              "ToolTip": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\StudentApp\\Stringtask3.cs",
+              "RelativeToolTip": "StudentApp\\Stringtask3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T05:15:42.033Z",
+              "WhenOpened": "2024-12-27T16:31:23.042Z",
               "EditorCaption": ""
             }
           ]

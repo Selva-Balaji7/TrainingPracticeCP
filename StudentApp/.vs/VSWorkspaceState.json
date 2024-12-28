@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bin",
+    "\\obj",
+    "\\Properties"
   ],
-  "SelectedNode": "\\BankAccount_v2.cs",
   "PreviewInSolutionExplorer": false
 }

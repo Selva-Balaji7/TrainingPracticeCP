@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using System;
 
 namespace StudentApp
@@ -7,8 +7,10 @@ namespace StudentApp
     {
         private static void Main(string[] args)
         {
-            StringFunctions s = new StringFunctions();
-            s.showStringMethods();
+            Stringtask1 t1 = new Stringtask1();
+            t1.TitlecaseReverse();
+            //StringFunctions s = new StringFunctions();
+            //s.showStringMethods();
             //MathFun m = new MathFun();
             //m.showMathMethods();
             //DateTimeMethod d = new DateTimeMethod();
@@ -80,11 +82,12 @@ namespace StudentApp
             //Console.WriteLine("---------------------------------------------------");
             //Console.WriteLine(f1.showContact());
             //Console.WriteLine("---------------------------------------------------");
-            //Console.ReadLine();
             //Stringtask2 st = new Stringtask2();
             //st.Fruits();
-            //Stringtask3 st = new Stringtask3();
-            //st.showSentence();
+            //Stringtask3 t1 = new Stringtask3();
+            //t1.showSentence();
+           
+            //Console.ReadLine();
 
         }
     }

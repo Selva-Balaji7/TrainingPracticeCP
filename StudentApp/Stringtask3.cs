@@ -21,7 +21,18 @@ namespace StudentApp
             int len = str2.Length;
             Console.WriteLine($"Letter Count:{len}");
 
-         }
+            char[] ch = str2.ToCharArray();
+            int count1 = 0;
+            for (int i = 0; i < ch.Length; i++)
+            {
+             if (ch[i]=='s')
+                {
+                    //Console.WriteLine(ch[i]);
+                    count1++;
+                }
+            }
+            Console.WriteLine($"Total No of occurances of s:{count1}");
+        }
        
     }
 }

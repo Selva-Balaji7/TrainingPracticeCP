@@ -8,14 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Task_1oops
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\selva.balaji\Desktop\.NET\Photobook\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-=======
 build_property.ProjectDir = C:\Users\tharu\OneDrive\Desktop\.NET\Photobook\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
->>>>>>> d8165c791906bf8b38a573a50803d17805a686e8
