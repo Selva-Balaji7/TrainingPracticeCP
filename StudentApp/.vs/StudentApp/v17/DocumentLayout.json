@@ -3,56 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Stringtask2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|c:\\users\\selva.balaji\\desktop\\.net\\studentapp\\stringfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|solutionrelative:stringfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\StringFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StringFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|c:\\users\\selva.balaji\\desktop\\.net\\studentapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|c:\\users\\selva.balaji\\desktop\\.net\\studentapp\\stringtask2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|solutionrelative:stringtask2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|c:\\users\\selva.balaji\\desktop\\.net\\studentapp\\stringtask1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|solutionrelative:stringtask1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\MathFun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MathFun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|c:\\users\\selva.balaji\\desktop\\.net\\studentapp\\stringtask3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|solutionrelative:stringtask3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Stringtask3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|c:\\users\\selva.balaji\\desktop\\.net\\studentapp\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Facaulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Facaulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|c:\\users\\selva.balaji\\desktop\\.net\\studentapp\\mathfun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|solutionrelative:mathfun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\IContact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IContact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\IPerson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IPerson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\DateTimeMethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DateTimeMethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\BankAccount_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankAccount_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\BankAccount_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankAccount_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\IAddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IAddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|c:\\users\\selva.balaji\\desktop\\.net\\studentapp\\datetimemethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0289C5A-7CB8-4403-A7B1-C14F6FACD534}|StudentApp.csproj|solutionrelative:datetimemethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,72 +42,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Stringtask3.cs",
-              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask3.cs",
-              "RelativeDocumentMoniker": "Stringtask3.cs",
-              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask3.cs",
-              "RelativeToolTip": "Stringtask3.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T12:10:24.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Stringtask2.cs",
               "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask2.cs",
               "RelativeDocumentMoniker": "Stringtask2.cs",
               "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask2.cs",
               "RelativeToolTip": "Stringtask2.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T11:37:36.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T06:08:15.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Facaulty.cs",
-              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Facaulty.cs",
-              "RelativeDocumentMoniker": "Facaulty.cs",
-              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Facaulty.cs",
-              "RelativeToolTip": "Facaulty.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Stringtask1.cs",
+              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask1.cs",
+              "RelativeDocumentMoniker": "Stringtask1.cs",
+              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask1.cs",
+              "RelativeToolTip": "Stringtask1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T16:03:22.349Z"
+              "WhenOpened": "2024-12-30T06:08:11.102Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IContact.cs",
-              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\IContact.cs",
-              "RelativeDocumentMoniker": "IContact.cs",
-              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\IContact.cs",
-              "RelativeToolTip": "IContact.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Stringtask3.cs",
+              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask3.cs",
+              "RelativeDocumentMoniker": "Stringtask3.cs",
+              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Stringtask3.cs",
+              "RelativeToolTip": "Stringtask3.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T10:21:06.99Z"
+              "WhenOpened": "2024-12-27T12:10:24.958Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IPerson.cs",
-              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\IPerson.cs",
-              "RelativeDocumentMoniker": "IPerson.cs",
-              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\IPerson.cs",
-              "RelativeToolTip": "IPerson.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T09:38:57.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Student.cs",
               "RelativeDocumentMoniker": "Student.cs",
@@ -135,38 +90,37 @@
               "RelativeToolTip": "Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T06:50:10.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T06:50:10.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T06:45:22.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "StringFunctions.cs",
               "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\StringFunctions.cs",
               "RelativeDocumentMoniker": "StringFunctions.cs",
               "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\StringFunctions.cs",
               "RelativeToolTip": "StringFunctions.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAACQAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wBIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T05:08:13.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MathFun.cs",
               "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\MathFun.cs",
               "RelativeDocumentMoniker": "MathFun.cs",
@@ -174,12 +128,11 @@
               "RelativeToolTip": "MathFun.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T09:18:40.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T09:18:40.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "DateTimeMethod.cs",
               "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\DateTimeMethod.cs",
               "RelativeDocumentMoniker": "DateTimeMethod.cs",
@@ -188,42 +141,6 @@
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwAEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T10:08:07.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BankAccount_v1.cs",
-              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\BankAccount_v1.cs",
-              "RelativeDocumentMoniker": "BankAccount_v1.cs",
-              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\BankAccount_v1.cs",
-              "RelativeToolTip": "BankAccount_v1.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T04:36:35.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BankAccount_v2.cs",
-              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\BankAccount_v2.cs",
-              "RelativeDocumentMoniker": "BankAccount_v2.cs",
-              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\BankAccount_v2.cs",
-              "RelativeToolTip": "BankAccount_v2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T04:36:43.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IAddress.cs",
-              "DocumentMoniker": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\IAddress.cs",
-              "RelativeDocumentMoniker": "IAddress.cs",
-              "ToolTip": "C:\\Users\\selva.balaji\\Desktop\\.NET\\StudentApp\\IAddress.cs",
-              "RelativeToolTip": "IAddress.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T10:09:17.195Z"
             }
           ]
         }

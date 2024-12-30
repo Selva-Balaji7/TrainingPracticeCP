@@ -1,58 +1,95 @@
 ﻿using System;
-namespace OopsDemo
+
+
+namespace StudentApp
 {
      internal class Program
     {
         private static void Main(string[] args)
         {
-            //Company comp = new Company(123, "Hematite");
-            //comp.displayCompanyDetails();
-            //Employee e = new Employee(123, "Changepond");
-            //e.Eid = 1;
-            //e.Fname = "parag";
-            //e.Yob = 1980;
-            //e.Salary = 100000;
-            //Console.WriteLine(e.displayEmpDetails());
 
-<<<<<<< HEAD
-            //SavingsAccount c1 = new SavingsAccount();
-            //c1.TotalAmount = 100000;
-            //Console.WriteLine(c1.GetTotalAmount());
-            //Console.WriteLine(c1.branchAddress());
-            //Customer c3 = new SavingsAccount();
-            //c3.TotalAmount = 120000;
-            //Console.WriteLine(c3.GetTotalAmount());
-            //Customer c2 = new CurrentAccount();
-            //Console.WriteLine(c2.GetTotalAmount());
-            //c2.TotalAmount = 150000;
-            //CurrentAccount c4=new CurrentAccount();
-            //c4.TotalAmount = 300000;
-            //Console.WriteLine(c4.GetTotalAmount());
-
-            Student s1 = new Student(7,"selva balaji");
-            Console.WriteLine(s1.sid + " " + s1.sname + " " + Student.collegename + " " + s1.cname + " " + Student.semester);
-            Student.collegename = "xyz COE";
-            Console.WriteLine(Student.collegename);
-            Console.ReadLine();
-=======
-            SavingsAccount c1 = new SavingsAccount();
-            c1.TotalAmount = 100000;
-            Console.WriteLine(c1.GetTotalAmount());
-            Console.WriteLine(c1.branchAddress());
-            Customer c3 = new SavingsAccount();
-            c3.TotalAmount = 120000;
-            Console.WriteLine(c3.GetTotalAmount());
-            Customer c2 = new CurrentAccount();
-            Console.WriteLine(c2.GetTotalAmount());
-            c2.TotalAmount = 150000;
-            CurrentAccount c4=new CurrentAccount();
-            c4.TotalAmount = 300000;
-            Console.WriteLine(c4.GetTotalAmount());
-            //Console.ReadKey();
->>>>>>> d8165c791906bf8b38a573a50803d17805a686e8
+            Stringtask1 st1 = new Stringtask1();
+            st1.TitlecaseReverse();
+            //StringFunctions s = new StringFunctions();
+            //s.showStringMethods(); 
+            //MathFun m = new MathFun();
+            //m.showMathMethods();
+            //DateTimeMethod d = new DateTimeMethod();
+            //d.showDataTimeMethod();
+            //Console.WriteLine("Enter the first name:");
+            //string fname = Console.ReadLine();
+            //Console.WriteLine("Enter the last name:");
+            //string lname = Console.ReadLine();
+            //Console.WriteLine("Enter the city:");
+            //string city = Console.ReadLine();
+            //Console.WriteLine($"{fname} { lname} is coming from { city}");
+            //Console.WriteLine("Name:" + fname + " " + lname);
+            //Console.WriteLine("City:" + city);
 
 
-           
+            //StudentApp.Banking.BankAccount ba = new Banking.BankAccount();
+            //Console.WriteLine("Curent Balance{0}", ba.cbalance);
+            //Console.WriteLine("Enter the deposit amount:");
+            //double a=Convert.ToDouble(Console.ReadLine());
+            //ba.Deposit(a);
+            //Console.WriteLine("After deposit {0},your balance is:{1}",a,ba.cbalance);
+            //ba.Deposit(10000);
+            //Console.WriteLine("After Depositing 10000 Current Balance {0}", ba.cbalance);
+            //Console.WriteLine("Enter the Withdraw amount:");
+            //double b=Convert.ToDouble(Console.ReadLine());
+            //ba.Withdraw(b);
+            // ba.Withdraw(5000);
+            //Console.WriteLine("After Withdrawing {0},your balance is:{1}",b,ba.cbalance);
+            //Console.WriteLine("After Withdrawing 5000 Current Balance {0}", ba.cbalance);
+            // Console.WriteLine("Student Application Management System");
+            //Student s1 = new Student();
+            //s1.rollno = Student.incrementid();
+            //s1.pname = "selva balaji";
+            //s1.gender = 'M';
+            //s1.City = "Kanchipuram";
+            //s1.State = "Tamilnadu";
+            //s1.Zipcode = 631501;
+            //s1.mobile = 7812805662;
+            //s1.email = "tharunbalaji1807@gmail.com";
+            //s1.showDetails();
+            //Console.WriteLine("---------------------------------------------------");
+            //Console.WriteLine(s1.showAddress());
+            //Console.WriteLine("---------------------------------------------------");
+            //Console.WriteLine(s1.showContact());
+            //Console.WriteLine("======================================================");
+            //Console.WriteLine("Rollno:" + s1.rollno);
+            //Console.WriteLine("Name:" + s1.name);
+            //Console.WriteLine("Gender:" + s1.gender);
+            //Student s2 = new Student();
+            //s2.rollno = Student.incrementid();
+            //s2.name = "Prachi";
+            //s2.gender = 'F';
+            //Console.WriteLine("Rollno:" + s2.rollno);
+            //Console.WriteLine("Name:" + s2.name);
+            //Console.WriteLine("Gender:" + s2.gender);
+            //s1.displayDetails(sname:"tharun", gender:'M');
+            //Faculty f1 = new Faculty();
+            //f1.rollno = Faculty.incrementid();
+            //f1.pname = "Tharun balaji";
+            //f1.gender = 'M';
+            //f1.City = "Chennai";
+            //f1.State = "Tamilnadu";
+            //f1.Zipcode = 600028;
+            //f1.mobile = 7856621280;
+            //f1.email = "selvabalaji1803@gmail.com";
+            //f1.showDetails();
+            //Console.WriteLine("---------------------------------------------------");
+            //Console.WriteLine(f1.showAddress());
+            //Console.WriteLine("---------------------------------------------------");
+            //Console.WriteLine(f1.showContact());
+            //Console.WriteLine("---------------------------------------------------");
+            //Console.ReadLine();
+            //Stringtask2 st = new Stringtask2();
+            //st.Fruits();
+            //Stringtask3 st3 = new Stringtask3();
+            //st3.showSentence();
+
+
         }
     }
 }
