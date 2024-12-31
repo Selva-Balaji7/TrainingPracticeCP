@@ -14,9 +14,11 @@ namespace StudentApp
             {
                 str[i] = str[i].ToLower().Replace(str[i][0].ToString(), str[i][0].ToString().ToUpper());
                 str1+=str[i];
+                Console.WriteLine(str1);
                 if (i < str.Length - 1)
                 {
                     str1 += " ";
+                    Console.WriteLine(str1);
                 }
             }
 

@@ -7,10 +7,10 @@ namespace StudentApp
     {
         private static void Main(string[] args)
         {
-            //Stringtask1 t1 = new Stringtask1();
-            //t1.TitlecaseReverse();
-            StringFunctions s = new StringFunctions();
-            s.showStringMethods();
+            Stringtask1 t1 = new Stringtask1();
+            t1.TitlecaseReverse();
+            //StringFunctions s = new StringFunctions();
+            //s.showStringMethods();
             //MathFun m = new MathFun();
             //m.showMathMethods();
             //DateTimeMethod d = new DateTimeMethod();

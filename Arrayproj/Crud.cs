@@ -27,26 +27,22 @@ namespace Arrayproj
                    
                     Console.Write("Enter the fruit that you want to add ");
                     string addfruit = Console.ReadLine();
-            //int count = 0;
+                     string title=TitleCase(addfruit);
                     isFound = false;
                     for (int i = 0; i < fruits.Count; i++)
                     {
-                        if (addfruit.Equals(fruits[i], StringComparison.OrdinalIgnoreCase))
+                        if (title.Equals(fruits[i], StringComparison.OrdinalIgnoreCase))
                         {
                             Console.WriteLine("this fruit already existing, add new one");
                             isFound = true;
                         }
-                        //else
-                        //{
-                        //    count++;
-                        //}
+                        
                     }
-                    //if (count == fruits.Count)
                 if (isFound == false)
                 {
-                        fruits.Add(addfruit);
+                        fruits.Add(title);
 
-            }
+                }
 
             return fruits;
                 }
@@ -54,7 +50,6 @@ namespace Arrayproj
                 { 
                     Console.WriteLine("Enter the fruit that you want to modify");
                     string oldfruit = Console.ReadLine();
-                    int count = 0;
                     for (int i = 0; i < fruits.Count; i++)
                     {
                         if (oldfruit.Equals(fruits[i], StringComparison.OrdinalIgnoreCase))
@@ -62,21 +57,19 @@ namespace Arrayproj
                             Console.WriteLine("fruit is present");
                             Console.WriteLine("Enter the new fruit name:");
                             string newfruit = Console.ReadLine();
+                            string title = TitleCase(newfruit);
                             //int index = fruits.IndexOf(fruits[i]);
-                            fruits.Insert(i,newfruit);
+                            fruits.Insert(i,title);
                             fruits.Remove(oldfruit);
-                            Console.WriteLine("modified successfully");
+                            isFound = true;
+                             break;
 
                         }
-                        else
-                        {
-                            count++;
-                        }
-
+                      
                     }
-                    if (count == fruits.Count)
+                    if (isFound == false)
                     {
-                        Console.WriteLine("Entered fruit not preset");
+                        Console.WriteLine("Entered fruit not present");
                     }
                       return fruits;
                  }
@@ -85,30 +78,37 @@ namespace Arrayproj
                 { 
                     Console.WriteLine("Enter the fruit that you want to Delete");
                     string oldfruit = Console.ReadLine();
-                    int count = 0;
                     for (int i = 0; i < fruits.Count; i++)
                     {
                         if (oldfruit.Equals(fruits[i], StringComparison.OrdinalIgnoreCase))
                         {
                             Console.WriteLine("fruit is present");
-                            fruits.Remove(oldfruit);
-                            Console.WriteLine("removed successfully");
-
-                        }
-                        else
-                        {
-                            count++;
+                            fruits.RemoveAt(i);
+                            isFound = true;
+                            break;
                         }
 
                     }
-                         if (count == fruits.Count)
+                         if (isFound == false)
                           {
-                            Console.WriteLine("Entered fruit not preset");
+                            Console.WriteLine("Make sure that the fruit is present");
                            }
                      return fruits;
                 }
-            
-        
+                     public string TitleCase(string title)
+                      {
+
+                        title = title.ToLower().Replace(title[0].ToString(), title[0].ToString().ToUpper());
+
+
+                        return title;
+                       }
+
+
+
+
+
+
 
     }
 }

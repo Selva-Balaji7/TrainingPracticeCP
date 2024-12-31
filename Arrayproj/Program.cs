@@ -1,10 +1,11 @@
 ﻿using System;
 
-namespace Arrayproj{
+namespace Arrayproj
+{
 
     internal class Program
     {
-        public static void Main(string[] args)
+        internal static void Main(string[] args)
         {
             //ArrayDemo arr = new ArrayDemo();
             //arr.showArrayFunctions();
@@ -20,48 +21,64 @@ namespace Arrayproj{
             Crud c = new Crud();
             bool istrue = true;
             while (istrue)
-            { 
+            {
+
+                Console.WriteLine("\n\n--------------");
+                string[] array = ["Menu:", "1.DisplayFruit", "2.AddFruit", "3.UpdateFruit", "4.DeleteFruit", "5.Exit"];
+                foreach (string menu in array)
                 {
-                    Console.WriteLine("\n\n--------------");
-                    Console.WriteLine("Menu:\n 1.DisplayFruit\n 2.AddFruit\n 3.UpdateFruit\n 4.DeleteFruit\n 5.Exit\n" );
-                    Console.WriteLine("Enter the Option:");
-                    int Option = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(menu);
+                }
+                Console.WriteLine("Enter the Option:");
+                int Option = Convert.ToInt32(Console.ReadLine());
 
-                    switch (Option)
-                    {
-                        case 1:
-                            c.DisplayFruit(fruits); 
-                            break;
+                switch (Option)
+                {
+                    case 1:
+                        c.DisplayFruit(fruits);
+                        break;
 
-                        case 2:
-                            fruits=c.AddFruit(fruits);
-                            if (c.isFound == false)
-                            {
-                                c.DisplayFruit(fruits);
-                                Console.WriteLine("added successfully");
-                            }
-
-                            break;
-                        case 3:
-                           fruits=c.UpdateFruit(fruits);
+                    case 2:
+                        fruits = c.AddFruit(fruits);
+                        if (c.isFound == false)
+                        {
                             c.DisplayFruit(fruits);
-                            Console.WriteLine("fuit added successfully");
+                            Console.WriteLine("added successfully");
+                        }
 
-                            break;
-                        case 4:
-                           fruits=c.DeleteFruit(fruits);
+                        break;
+                    case 3:
+                        fruits = c.UpdateFruit(fruits);
+                        if (c.isFound == true)
+                        {
                             c.DisplayFruit(fruits);
-                            Console.WriteLine("fruit added successfully");
-                            break;
-                        case 5:
-                            goto exit;
-                           
-                    }
+                            Console.WriteLine("fruit modified successfully");
+                        }
+
+                        break;
+                    case 4:
+                        fruits = c.DeleteFruit(fruits);
+                        if (c.isFound == true)
+                        {
+                            c.DisplayFruit(fruits);
+                            Console.WriteLine("fruit deleted successfully");
+                        }
+                        break;
+                    case 5:
+                        goto exit;
 
                 }
 
-            }
+             }
         exit:;
         }
-    }
+        
+     }
+
+  
 }
+
+
+//  exit:;
+
+
