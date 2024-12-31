@@ -27,7 +27,7 @@ namespace StudentApp
             //Console.WriteLine("remove:{0}", name.Remove(1, 4));
             //Console.WriteLine("startswith:{0}", name.StartsWith("Selva"));
             //Console.WriteLine("endswith:{0}", name.EndsWith("Balaji"));
-             Console.WriteLine("contains:{0}", name.Contains("Balaji"));
+            // Console.WriteLine("contains:{0}", name.Contains("Balaji"));
             //Console.WriteLine("equals:{0}", name.Equals("msg"));
             //Console.WriteLine("equals method:" + city1.Equals(city2,StringComparison.OrdinalIgnoreCase));
             //Console.WriteLine("indexof:{0}", name.IndexOf(" "));

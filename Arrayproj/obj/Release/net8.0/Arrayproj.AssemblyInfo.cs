@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arrayproj")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc13939bdf706ba924d27a4092c396f1f728fcd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1ce98797ab63a63781668cbba01d38b78aca5b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arrayproj")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arrayproj")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
