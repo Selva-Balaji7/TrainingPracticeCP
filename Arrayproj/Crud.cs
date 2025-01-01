@@ -24,8 +24,8 @@ namespace Arrayproj
 
         public List<string> AddFruit(List<string> fruits)
                 {
-                   
-                    Console.Write("Enter the fruit that you want to add ");
+             isFound = false;
+            Console.Write("Enter the fruit that you want to add ");
                     string addfruit = Console.ReadLine();
                      string title=TitleCase(addfruit);
                     isFound = false;
@@ -47,7 +47,8 @@ namespace Arrayproj
             return fruits;
                 }
                  public List<string> UpdateFruit(List<string> fruits)
-                { 
+                {
+                   isFound = false;
                     Console.WriteLine("Enter the fruit that you want to modify");
                     string oldfruit = Console.ReadLine();
                     for (int i = 0; i < fruits.Count; i++)
@@ -59,9 +60,9 @@ namespace Arrayproj
                             string newfruit = Console.ReadLine();
                             string title = TitleCase(newfruit);
                             //int index = fruits.IndexOf(fruits[i]);
-                            fruits.Insert(i,title);
-                            fruits.Remove(oldfruit);
-                            isFound = true;
+                             fruits.RemoveAt(i);
+                             fruits.Insert(i,title);
+                             isFound = true;
                              break;
 
                         }
@@ -75,7 +76,8 @@ namespace Arrayproj
                  }
 
                  public List<string> DeleteFruit(List<string> fruits)
-                { 
+                {
+                     isFound = false;
                     Console.WriteLine("Enter the fruit that you want to Delete");
                     string oldfruit = Console.ReadLine();
                     for (int i = 0; i < fruits.Count; i++)

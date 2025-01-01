@@ -1,0 +1,5 @@
+.vs/
+*.suo
+# # Ignore Visual Studio folders and files
+# .vs/
+# *.vsidx
