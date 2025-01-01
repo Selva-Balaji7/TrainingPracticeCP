@@ -32,12 +32,12 @@ namespace Arrayproj
         {
             isFound = false;
             Console.WriteLine("\nEnter id:");
-            int id = int.Parse(Console.ReadLine());
+            int existid = int.Parse(Console.ReadLine());
             for (int i = 0; i < person.Count; i++)
             {
-                if (id == person[i].Eid)
+                if (existid == person[i].Eid)
                 {
-                    Console.WriteLine("this employee name already existing, add new one");
+                    Console.WriteLine("this employee already existing, add new one");
                     isFound = true;
                 }
 
@@ -49,27 +49,54 @@ namespace Arrayproj
             string addname = Console.ReadLine();
             Console.WriteLine("\nEnter designation:");
             string designation = Console.ReadLine();
-            person.Add(new Employee(addname, addid, designation));
             string adddesignation = Console.ReadLine();
+            person.Add(new Employee(addname, addid, designation));
+           
            
             }
 
             return person ;
         }
-        public List<string> UpdateEmployee(List<string> fruits)
+        public List<Employee> UpdateEmployee(List<Employee> person)
         {
             isFound = false;
-            Console.WriteLine("Enter the fruit that you want to modify");
-            string oldfruit = Console.ReadLine();
-            for (int i = 0; i < fruits.Count; i++)
+            Console.WriteLine("\nEnter the Employee id that you want to update:");
+            int existid =int.Parse(Console.ReadLine());
+            for (int i = 0; i < person.Count; i++)
             {
-                if (oldfruit.Equals(fruits[i], StringComparison.OrdinalIgnoreCase))
+                if (existid == person[i].Eid)
                 {
-                    Console.WriteLine("fruit is present");
-                    Console.WriteLine("Enter the new fruit name:");
-                    string newfruit = Console.ReadLine();
-                    string title = TitleCase(newfruit);
-                    //int index = fruits.IndexOf(fruits[i]);
+                    Console.WriteLine("Yes, this employee is present");
+                    Console.WriteLine("\nEnter the option that you want to update:");
+                    string[] update = ["update id","update name","update designation"];
+                    for(int j = 1; j<=update.Length; j++)
+                    {
+                        Console.WriteLine($"{j}.{update}");
+                    }
+                    int Option=int.Parse(Console.ReadLine());
+                    switch (Option)
+                    {
+                        case 1:
+                            Console.WriteLine("Enter new id:");
+                            int newid = int.Parse(Console.ReadLine());
+                            for (int k = 1; k <= person.Count; k++)
+                            {
+                                if ((person[k].Eid) == newid)
+                                {
+                                    Console.WriteLine("This id is already existing,enter new id:");
+                                    isFound = true;
+                                    break;
+                                }
+                            }
+                            if (isFound == false)
+                            {
+                                person.Add(person[i]);
+                            }
+
+                            break;
+                    }
+
+
                     fruits.RemoveAt(i);
                     fruits.Insert(i, title);
                     isFound = true;
@@ -80,9 +107,9 @@ namespace Arrayproj
             }
             if (isFound == false)
             {
-                Console.WriteLine("Entered fruit not present");
+                
             }
-            return fruits;
+            return person;
         }
 
         public List<string> DeleteEmployee(List<string> fruits)
