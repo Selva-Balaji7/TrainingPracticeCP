@@ -71,13 +71,29 @@ namespace Arrayproj
                     string[] update = ["update id","update name","update designation"];
                     for(int j = 1; j<=update.Length; j++)
                     {
-                        Console.WriteLine{$"{j}.{update}" };
+                        Console.WriteLine($"{j}.{update}");
                     }
                     int Option=int.Parse(Console.ReadLine());
                     switch (Option)
                     {
-                        case "1": Console.WriteLine("Enter new id:");
-                    
+                        case 1:
+                            Console.WriteLine("Enter new id:");
+                            int newid = int.Parse(Console.ReadLine());
+                            for (int k = 1; k <= person.Count; k++)
+                            {
+                                if ((person[k].Eid) == newid)
+                                {
+                                    Console.WriteLine("This id is already existing,enter new id:");
+                                    isFound = true;
+                                    break;
+                                }
+                            }
+                            if (isFound == false)
+                            {
+                                person.Add(person[i]);
+                            }
+
+                            break;
                     }
 
 
