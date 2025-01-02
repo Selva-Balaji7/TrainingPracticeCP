@@ -1,14 +1,3 @@
-dotnet ef dbcontext scafold "dotnet ef dbcontext scaffold "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Company;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False" Microsoft.EntityFrameworkCore.SqlServer -o models
-"Microsoft.EntityFrameworkCore.SqlServer -o models
-
-In package manager
-dotnet new tool-manifest
-
-2.  dotnet tool install --local dotnet-ef
-
-3. dotnet ef
-
-https://codeshare.io/64obv0
 program.cs
 builder.Services.AddDbContext<CompanyContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -35,13 +24,26 @@ namespace MyDemoApp.Models
  dotnet ef migrations add CompanyDB
  
  dotnet ef database update
+ 
+ 
+ Information.cs
+ 
+ namespace MyDemoApp.Models
+{
+    public class Information
+    {
+        public int Id { get; set; }
 
+        public string Name { get; set; }
 
+        public string License { get; set; }
 
+        public DateTime Established { get; set; }
 
+        public decimal Revenue { get; set; }
 
-
-
+    }
+}
 
 
 
