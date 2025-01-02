@@ -1,0 +1,9 @@
+C:\Users\selva.balaji\Desktop\.NET\WebApplication1\obj\Debug\net8.0\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\selva.balaji\Desktop\.NET\WebApplication1\obj\Debug\net8.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\selva.balaji\Desktop\.NET\WebApplication1\obj\Debug\net8.0\WebApplication1.AssemblyInfoInputs.cache
+C:\Users\selva.balaji\Desktop\.NET\WebApplication1\obj\Debug\net8.0\WebApplication1.AssemblyInfo.cs
+C:\Users\selva.balaji\Desktop\.NET\WebApplication1\obj\Debug\net8.0\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\selva.balaji\Desktop\.NET\WebApplication1\obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\selva.balaji\Desktop\.NET\WebApplication1\obj\Debug\net8.0\WebApplication1.RazorAssemblyInfo.cache
+C:\Users\selva.balaji\Desktop\.NET\WebApplication1\obj\Debug\net8.0\WebApplication1.RazorAssemblyInfo.cs
+C:\Users\selva.balaji\Desktop\.NET\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json

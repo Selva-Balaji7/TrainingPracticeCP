@@ -18,8 +18,8 @@ namespace ExceptionApp
         private static void Main(String[] args)
         {
 
-            StreamIO s = new StreamIO();
-            s.FileWrite();
+            //StreamIO s = new StreamIO();
+            //s.FileWrite();
             //Directoryclass dc = new Directoryclass();
             //dc.DirectoryMethod();
             //SystemFile f = new SystemFile();
@@ -39,8 +39,8 @@ namespace ExceptionApp
             //Subscriber1 s1 = new Subscriber1();
             //s1.connect();
 
-            //AttendanceSubscriber As=new AttendanceSubscriber();
-            //As.connect();
+            AttendanceSubscriber As = new AttendanceSubscriber();
+            As.connect();
 
             //-------------------------------------------------------------------------------------------------------
             //Calc d;
