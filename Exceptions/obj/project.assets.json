@@ -105,11 +105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\Arrayproj\\Arrayproj.csproj",
-      "projectName": "Arrayproj",
-      "projectPath": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\Arrayproj\\Arrayproj.csproj",
+      "projectUniqueName": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\Exceptions\\Exceptions.csproj",
+      "projectName": "Exceptions",
+      "projectPath": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\Exceptions\\Exceptions.csproj",
       "packagesPath": "C:\\Users\\tharu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\Arrayproj\\obj\\",
+      "outputPath": "C:\\Users\\tharu\\OneDrive\\Desktop\\.NET\\Exceptions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
