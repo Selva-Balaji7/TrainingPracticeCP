@@ -1,3 +1,14 @@
+comands that we should use:(command in package manager)
+1.  dotnet new tool-manifest
+
+2.  dotnet tool install --local dotnet-ef
+
+Scaffold-DbContext "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Company;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False" Microsoft.EntityFrameworkCore.SqlServer -O models
+
+frameworks need to install:(tool->nugutpackage Manager->package Manager solution->browse)
+1.Microsoft.EntityFrameworkCore.SqlServer
+
+
 program.cs
 builder.Services.AddDbContext<CompanyContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
