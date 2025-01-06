@@ -1,7 +1,8 @@
 ﻿using DemoApp.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace DemoApp.Controllers
 {
@@ -22,18 +23,12 @@ namespace DemoApp.Controllers
         public IActionResult Create()
         {
             List<SelectListItem> dept = new List<SelectListItem>();
-            dept=context.Department.Select(x=>new SelectListItem { Text= x.Name, Value = x.Id.ToString() } ).ToList();
+            dept = context.Department.Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() }).ToList();
             ViewBag.Department=dept;
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Create()
-        { 
-        
-        
-        
-        }
+       
 		
 	}
 }

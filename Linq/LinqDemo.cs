@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Linq
+namespace LinqBasics
 {
     internal class LinqDemo
     {
@@ -19,7 +19,7 @@ namespace Linq
             { 
             Console.WriteLine(item);
             }
-
+            Console.ReadKey();
         }
      
 
