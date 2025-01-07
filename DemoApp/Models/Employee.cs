@@ -6,6 +6,6 @@
         public string Name { get; set; }
         public string Designation { get; set; }
         public int DepartmentId { get; set; }
-        public Department Department { get; set; } = null;
+        public Department Department { get; set; } 
     }
 }

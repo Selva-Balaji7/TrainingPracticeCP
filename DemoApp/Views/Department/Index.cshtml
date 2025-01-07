@@ -4,6 +4,11 @@
     @{
         ViewData["Title"]="Department List";
     }
+    @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+    <h2>
+        Current Date and Year:@HttpContextAccessor.HttpContext.Session.GetString("CurrentDateTime");
+        @HttpContextAccessor.HttpContext.Session.GetInt32("CurrentYear");
+    </h2>
     @model IEnumerable<Department>
     <h1 class="bg-info text-white">Departements List</h1>
     <a asp-action="Create" class="btn btn-secondary">Create Department</a>

@@ -4,6 +4,21 @@
 @{
     ViewData["Title"] = "Create Employee";
 }
-<h1 class="Big Info text-white">Employee is added successfully</h1>
+@model Employee
+@* <h1 class="Big Info text-white">Employee is added successfully</h1> *@
 
-@*@foreach(Employee emp)*@
+<form method="post">
+	<div class="form-group">
+		<label asp-for="Name"></label>
+		<input asp-for="Name" class="form-control"></input>
+	</div>
+	<div class="form-group">
+		<label asp-for="DepartmentId"></label>
+		<select asp-for="DepartmentId" asp-items="ViewBag.Department" class="form-control"></select>
+	</div>
+	<div class="form-group">
+		<label asp-for="Designation"></label>
+		<input asp-for="Designation" class="form-control"></input>
+	</div>
+	<button type="submit" class="btn btn-primary">Create</button>
+</form>

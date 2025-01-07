@@ -17,8 +17,8 @@ namespace DemoApp.Controllers
         }
         public IActionResult Index()
         {
-            return View();
-            //context.Department.AsNoTracking()
+            return View(context.Department.AsNoTracking());
+            
         }
         public IActionResult Create()
         {
