@@ -2,11 +2,11 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "Create Employee";
+    ViewData["Title"] = "Update Employee";
 }
 @model Employee
-@* <h1 class="Big Info text-white">Employee is added successfully</h1> *@
-
+<a asp-action="Eindex" class="btn btn-secondary">Go Back</a>
+<h1 class="bg-info text-white">Update Employee</h1>
 <form method="post">
 	<div class="form-group">
 		<label asp-for="Name"></label>
@@ -20,5 +20,6 @@
 		<label asp-for="Designation"></label>
 		<input asp-for="Designation" class="form-control"></input>
 	</div>
-	<button type="submit" class="btn btn-primary">Create</button>
+    <button type="submit" class="btn btn-primary">Update</button>
+
 </form>
