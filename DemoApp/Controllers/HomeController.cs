@@ -47,15 +47,17 @@ namespace DemoApp.Controllers
             HttpContext.Session.SetString("CurrentDateTime", DateTime.Now.ToString());
             HttpContext.Session.SetInt32("CurrentYear", DateTime.Now.Year);
             HttpContext.Session.SetString("CurrentUser", "Admin");
-            return RedirectToAction("Index");
+            return View();
+            //return RedirectToAction("Index");
+
         }
         public IActionResult TempDataExample()
         {
             TempData["CurrentDateTime"] = DateTime.Now;
             TempData["CurrentYear"] = DateTime.Now.Year;
             TempData["CurrentUser"] = "Guest";
-            //return View();
-           return RedirectToAction("Index");
+            return View();
+           //return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()

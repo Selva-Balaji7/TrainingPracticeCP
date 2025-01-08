@@ -1,5 +1,11 @@
-﻿  @*
-      For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-  *@
-  @{
-  }
+﻿   @*
+       For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+   *@
+@{
+    ViewData["Title"] = "Session Example";
+}
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+<h2>@ViewData["Title"]</h2>
+<h3>Current Date and Time:@HttpContextAccessor.HttpContext.Session.GetString("CurrentDateTime")</h3>
+<h3>Curren Year:@HttpContextAccessor.HttpContext.Session.GetInt32("CurrentYear")</h3>
+<h3>CurrentUser:@HttpContextAccessor.HttpContext.Session.GetString("CurrentUser")</h3>

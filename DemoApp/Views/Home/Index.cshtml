@@ -1,12 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-<h3>@HttpContext.Session.GetString("CurrentDateTime")</h3>
-<h3>@HttpContext.Session.GetInt32("CurrentYear")</h3>
-<h3>@HttpContext.Session.GetString("CurrentUser")</h3>
+<h3>Current Date and Time:@HttpContextAccessor.HttpContext.Session.GetString("CurrentDateTime")</h3>
+<h3>Curren Year:@HttpContextAccessor.HttpContext.Session.GetInt32("CurrentYear")</h3>
+<h3>CurrentUser:@HttpContextAccessor.HttpContext.Session.GetString("CurrentUser")</h3>
 
