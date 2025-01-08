@@ -19,6 +19,7 @@ namespace DemoApp.Controllers
         {
             return View(context.Department.AsNoTracking());
             
+            
         }
         public IActionResult Create()
         {
