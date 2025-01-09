@@ -20,7 +20,11 @@ export class ProductEdtComponent {
       this.id=param.id;
       this._dbObj.getSingleRecord("products",this.id).subscribe((res:any)=>{
         //console.log(res);
+<<<<<<< HEAD
         this.prodData={res}})
+=======
+        this.prodData= res})
+>>>>>>> ee11b37d26e3ef9a6da7922996b38b43c680cdab
     })
   }
   addData(value:any){

@@ -1,8 +1,9 @@
 <p>parent works!</p>
-<div>{{childData}}</div>
+<div>{{parentData}}</div>
 <form>
     <input type="text" name="parentinput" #parentinfo><br>
     <button type="button" (click)="senData(parentinfo.value)">send Data</button>
 </form>
 <hr>
-<app-child (eventObj)="childData=$event" [pdata]="parentData"></app-child>
+    <app-child (eventObj)="childData=$event" [pdata]="parentData"></app-child> 
+  <!-- <app-child [pdata]="parentData"></app-child> (for sending data from only parent to child) -->

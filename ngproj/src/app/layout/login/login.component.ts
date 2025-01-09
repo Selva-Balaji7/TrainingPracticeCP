@@ -21,7 +21,7 @@ export class LoginComponent {
   }
   checkUser(){
     this._dbServ.getRecord("users").subscribe((res)=>{
-      // console.log(res);
+     console.log(res);
       this.userData=res;
       console.log(this.uid, this.upass);
       const currentUser=this.userData.filter((val:any,index:any)=>{return val.userid===this.uid && val.userpass===this.upass});

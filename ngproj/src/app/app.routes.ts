@@ -7,10 +7,8 @@ import { UtdfComponent } from './form/utdf/utdf.component';
 import { RtfComponent } from './form/rtf/rtf.component';
 import { PagenotfoundComponent } from './layout/pagenotfound/pagenotfound.component';
 import { MaindashboardComponent } from './layout/maindashboard/maindashboard.component';
-import { NavComponent } from './layout/nav/nav.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
-import { ItemsservicesService } from './shared/services/itemsservices.service';
 import { ProductDashComponent } from './Crud/product-dash/product-dash.component';
 import { ItemComponent } from './item/item.component';
 import { ProuductAddComponent } from './Crud/prouduct-add/prouduct-add.component';
@@ -19,7 +17,7 @@ import { authGuard } from './shared/custguard/auth.guard';
 
 export const routes: Routes = [
     //default routing
-    {path:"",component:LoginComponent},
+   // {path:"",component:LoginComponent},
     //redirecting routing
 
     {path:"",redirectTo:"login",pathMatch:"full"},
@@ -31,7 +29,7 @@ export const routes: Routes = [
     //child routing
     {path:"maindashboard",component:MaindashboardComponent,canActivate:[authGuard],children:[
         
-        {path:"parent",component:ParentComponent},
+       {path:"parent",component:ParentComponent},
         {path:"child",component:ChildComponent},
         {path:"databinding",component:DatabindingComponent},
         {path:"items",component:ItemComponent},

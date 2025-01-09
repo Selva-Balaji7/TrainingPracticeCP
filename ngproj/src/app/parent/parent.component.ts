@@ -10,8 +10,12 @@ import { ChildComponent } from '../child/child.component';
 export class ParentComponent {
   parentData:any;
   childData:any;
-  senData(val:string){
-  //console.log(val);
-  this.parentData=val;
-  }
+  // constructor(){
+  //   this.parentData=0;
+  //   this.childData=0;
+  // }
+   senData(val:any){
+  console.log(val);
+   this.parentData=val;
+   }
 }

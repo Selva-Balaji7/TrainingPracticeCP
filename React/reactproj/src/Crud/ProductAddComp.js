@@ -60,4 +60,4 @@ const ProductAddComp = () => {
         </div>
     )
 }
-export default ProductAddComp
+export default ProductAddComp;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+//function component
 const MyNameComp = (props) => {
     return (
         <div>

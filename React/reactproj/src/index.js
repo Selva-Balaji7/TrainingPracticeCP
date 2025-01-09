@@ -6,16 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import routing from './MainRouting/Routing';
 import { RouterProvider } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from './reduxCode/store'
+//import { Provider } from 'react-redux';
+//import store from './reduxCode/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
-  {/* <Provider store={store}>
+    {/* <App/> */}
+   {/* <Provider store={store}>
+   
+    </Provider>  */}
     <RouterProvider router={routing}></RouterProvider>
-    </Provider> */}
   </React.StrictMode>
 );
 
