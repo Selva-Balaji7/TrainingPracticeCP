@@ -7,12 +7,26 @@ namespace WebApiDem.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private ReservationContext context;
+        public HomeController(ILogger<HomeController> logger,ReservationContext context)
         {
             _logger = logger;
+             context = context;
         }
+        public string CreateReservation()
+        {
+            var res = new Reservation()
+            {
+             Id = 100,
+             Name = "selva balaji",
+             StartLocation = "Kanchipuram",
+             EndLocation = "Chennai"
+            };
+            context.Entry(res).State = Microsoft.EntityFrameworkCore.EntityState.Added;
+            context.SaveChanges();
 
+            return "records inserted";
+        }
         public IActionResult Index()
         {
             return View();
