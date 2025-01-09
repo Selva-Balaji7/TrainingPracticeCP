@@ -1,5 +1,5 @@
 import {createBrowserRouter} from "react-router-dom";
-import MainDashBoardComp from "../Layout/MainDashBoarComp";
+ import MainDashBoardComp from "../Layout/MainDashBoarComp";
 import MyFavColorComp from "../component/MyFavColorComp";
 import FormValComp from "../component/FormValComp";
 import ClassComp from "../component/ClassComp";
@@ -7,12 +7,12 @@ import ReactHooksComp from "../Hooks/ReactHooksComp";
 import UseEffectHooksComp from "../Hooks/UseEffectHooksComp";
 import FuncComp from "../component/FuncComp";
 import UseStateHooksComp from "../Hooks/UseStateHooks";
-import PageNotFoundComp from "../Layout/PageNotFoundComp";
-import ProductDashComp from "../Crud/ProductDashComp";
-import ProtectedRouting from "./ProtectedRouting";
-import LogoutComp from "../Layout/LogoutComp";
-import LoginComp from "../Layout/LoginComp";
-import DataListComp from "../reduxCode/DataListComp";
+  import PageNotFoundComp from "../Layout/PageNotFoundComp";
+   import ProductDashComp from "../Crud/ProductDashComp";
+   import ProtectedRouting from "./ProtectedRouting";
+   import LogoutComp from "../Layout/LogoutComp";
+   import LoginComp from "../Layout/LoginComp";
+   import DataListComp from "../reduxCode/DataListComp";
 
 
 
@@ -37,7 +37,7 @@ const routing = createBrowserRouter([
         {path:"useeffect",element:<UseEffectHooksComp/>},
         {path:"usestate",element:<UseStateHooksComp/>},
     ]},
-    {path:"funccomp",element:<FuncComp/>},
+  {path:"funccomp",element: <FuncComp/>},
     {path:"ProductDashComp",element:<ProductDashComp/>},
     {path:"datalist",element:<DataListComp/>}
 

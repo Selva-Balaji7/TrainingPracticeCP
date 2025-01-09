@@ -8,9 +8,13 @@ import { Component,EventEmitter,Input,Output } from '@angular/core';
 })
 export class ChildComponent {
   @Input() pdata:any;
-  @Output() eventObj=new EventEmitter()
-  senData(val:any)
+ @Output() eventObj=new EventEmitter() //sending output to parent
+  // constructor(){
+  //   this.pdata=0;
+  // }
+   senData(val:any)
   {
+   
     this.eventObj.emit(val);
   }
 

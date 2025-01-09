@@ -12,9 +12,9 @@
 </ng-template>
 <hr>
 <!-- use of *ngfor -->
-<ul>
-    <li *ngFor="let course of courses" [ngClass]="myClass">{{course}}</li>
-</ul>
+<ol>
+    <li *ngFor="let list of courses" [ngClass]="myClass">{{list}}</li>
+</ol>
 <hr>
 <!-- use pf *ngSwitchCase -->
  <div [ngSwitch]="myCourse">
@@ -23,11 +23,10 @@
 <div *ngSwitchCase="'python'">You have selected React</div>
 <div *ngSwitchCase="'java'">You have selected React</div>
 <div *ngSwitchCase>Invalid choice</div>
-
  </div>
+ <!-- ngSwitchCase short method -->
  <div [ngSwitch]="myCourse">
- <div *ngFor="let course of courses">
-<div *ngSwitchCase="course">you Have selected {{course}}</div>
-    
-</div>
-<div *ngSwitchDefault>Invalid choice</div>
+ <div *ngFor="let list of courses">
+    <div *ngSwitchCase="list">here you selected {{list}}</div>
+ </div>
+ </div>

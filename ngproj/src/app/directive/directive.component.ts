@@ -13,7 +13,7 @@ export class DirectiveComponent {
  isCond3:boolean=!true;
 
  courses:string[]=["react","angular","python","dotnet","jana"];
- myCourse:string="Angular";
+ myCourse:string="angular";
 
  myStyle={
   color:!this.isCond1?"red":"green",

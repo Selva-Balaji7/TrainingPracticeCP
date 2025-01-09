@@ -13,7 +13,7 @@ class ParentComp extends Component{
     }
 
           changeStateData=()=>{
-            console.log("hi");
+            console.log("parent");
             this.setState({empName:"Selva S",empSal:this.state.empSal+5000});
 
     }
@@ -31,9 +31,9 @@ class ParentComp extends Component{
 
              <button type="button" className="btn btn-primary" onClick={()=>this.changeStateData()}>change state</button><br></br>
         <ChildComp name={empName} sal={empSal} manageState={this.changeStateData}></ChildComp>
-        <MyPureComp empName={empName}></MyPureComp>
+        {/* <MyPureComp empName={empName}></MyPureComp>
         <hr></hr>
-        <MemoComp empName={empName}></MemoComp>
+        <MemoComp empName={empName}></MemoComp> */}
 
 
         </Fragment>

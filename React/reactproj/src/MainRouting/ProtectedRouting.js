@@ -18,4 +18,4 @@ const ProtectedRouting = ({Component}) => {
     )
 }
 
-export default ProtectedRouting
+export default ProtectedRouting;

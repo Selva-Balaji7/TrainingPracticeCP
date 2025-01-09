@@ -32,15 +32,15 @@ function App() {
           Learn React
         </a>
       </header> */}
-      {/* <h1>welcome to all </h1> */}
-      {/* <FuncComp fname="selva Balaji" post="Fullstack Developer"></FuncComp> 
-      <SelvaComp fname="Tharun Balaji" salary={10000000} post="fullstack-Developer" gender="Male" address="chennai"></SelvaComp> 
-      <ClassComp fname="panchashil" post="Trainer"></ClassComp>
+      {/* {<h1>welcome to all </h1>}
+       <FuncComp fname="selva Balaji" post="Fullstack Developer"></FuncComp> 
+      <ClassComp fname="panchashil" post="Trainer"></ClassComp> */}
+      {/* <MyStateComp></MyStateComp> */}
+      {/* <ConditionalRenComp></ConditionalRenComp> */}
+      {/* <SelvaComp fname="Tharun Balaji" salary={10000000} post="fullstack-Developer" gender="Male" address="chennai"></SelvaComp> 
       <EventComp></EventComp>
-      <MyStateComp></MyStateComp>
-      <ConditionalRenComp></ConditionalRenComp>
-       <CssComp></CssComp> */}
-       {/* <ParentComp gender="Male" contact="9289383821"></ParentComp> */}
+       <CssComp></CssComp> */} 
+        {/* <ParentComp gender="Male" contact="9289383821"></ParentComp>  */}
        {/* <ClickCounterComp></ClickCounterComp> */}
        {/* <MyImageComp></MyImageComp> */}
        {/* <UserComp user="selva balaji"></UserComp> */}
