@@ -1,8 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom';
+import {useNavigate,useParams} from 'react-router-dom';
 
-function EditReservationComp() {
+
+
+function EditResComp() {
 
     const {id} = useParams();
     const nav = useNavigate();
@@ -28,7 +30,7 @@ function EditReservationComp() {
 
     const submitEdit = (event) => {
         event.preventDefault();
-        axios.put("http://localhost:3201/api/reservation",reservation).then(()=>{
+        axios.put("http://localhost:5166/api/reservation",reservation).then(()=>{
             window.alert("Edit Successfull");
         }).catch((error)=>{});
         nav("/");
@@ -71,7 +73,7 @@ function EditReservationComp() {
                             <input type="text" className="form-control" name='endLocation' value={reservation.endLocation} onChange={handleChange} ></input>
                         </div>
 
-                        <button type='submit'>Submit</button>
+                        <button type='submit' class="btn btn-success">Submit</button>
                     </form>
                 </div>
                 <div className='col-sm-3'></div>
@@ -81,4 +83,4 @@ function EditReservationComp() {
     )
 }
 
-export default EditReservationComp;
+export default EditResComp;

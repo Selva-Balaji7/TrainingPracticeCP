@@ -2,9 +2,9 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-function AddReservationComp() {
+function AddResComp() {
     const nav = useNavigate();
-    const[url, setUrl] = useState("http://localhost:5166/api/reservation");
+    const[url, setUrl] = useState("http://localhost:5166/api/Reservation");
 
     const [reservation, setreservation] = useState({
             id:"",
@@ -20,8 +20,11 @@ function AddReservationComp() {
 
     const submitData = (event) => {
         event.preventDefault();
+        console.log(reservation);
         
-        axios.post(url, reservation).then(()=>{
+        /*axios.post(url, reservation).then(()=>{*/
+
+        axios.post("http://localhost:5166/api/Reservation",reservation).then(()=>{
             window.alert("Added Successfully");
             nav("/");
         }).catch((error)=>{});
@@ -57,7 +60,7 @@ function AddReservationComp() {
                             <input type="text" className="form-control" name='endLocation' value={reservation.endLocation} onChange={handleChange} ></input>
                         </div>
 
-                        <button type='submit'>Submit</button>
+                        <button type='submit' className="btn btn-success">Submit</button>
                     </form>
                 </div>
                 <div className='col-sm-3'></div>
@@ -67,4 +70,4 @@ function AddReservationComp() {
     )
 }
 
-export default AddReservationComp;
+export default AddResComp;

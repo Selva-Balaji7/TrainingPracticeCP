@@ -1,20 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
-import ReservationDashComp from "./CRUD/ReservationDashComp";
-import AddReservationComp from "./CRUD/AddReservationComp";
-import EditReservationComp from "./CRUD/EditReservationComp";
-import MainDashBoard from "./Layout/MainDashBoard";
-
+import ReservationComp from "./CRUD/ReservationComp";
+import AddResComp from "./CRUD/AddResComp";
+import EditResComp from "./CRUD/EditResComp";
+import MainReserveComp from "./components/MainReserveComp";
 
 const routing = createBrowserRouter([
 
     {
         // path: "dashboard", element: <MainDashBoard />, children: [
-        path: "", element: <MainDashBoard/>, children: [
+        path: "", element: <MainReserveComp/>, children: [
 
             // default Routing
-            { path: "", element: <ReservationDashComp /> },
-            { path: "addreservation", element: <AddReservationComp /> },
-            { path: "editreservation/:id", element: <EditReservationComp /> },
+            { path: "", element: <ReservationComp /> },
+            { path: "addreservation", element: <AddResComp /> },
+            { path: "editreservation/:id", element: <EditResComp /> },
         ]        
     }
 

@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 
 
-function ReservationDashComp() {
+function ReservationComp() {
     const [reservations, setReservations] = useState([]);
 
     useEffect(() => {
@@ -12,7 +12,7 @@ function ReservationDashComp() {
     }, [])
 
     const getData = () => {
-        axios.get("http://localhost:3201/api/reservation").then((res) => {
+        axios.get("http://localhost:5166/api/reservation").then((res) => {
             console.log(res.data);
             setReservations(res.data);
         }).catch((error) => { })
@@ -21,7 +21,7 @@ function ReservationDashComp() {
     const deleteFun = (id) => {
         // window.alert(`Delete button clicked ${id}`);
         let conf = window.confirm("Do you want to Delete it");
-        conf && axios.delete(`http://localhost:3201/api/reservation/${id}`).then(() => {
+        conf && axios.delete(`http://localhost:5166/api/reservation/${id}`).then(() => {
             getData();
         }).catch((error) => { });
     }
@@ -77,4 +77,4 @@ function ReservationDashComp() {
     )
 }
 
-export default ReservationDashComp;
+export default ReservationComp;

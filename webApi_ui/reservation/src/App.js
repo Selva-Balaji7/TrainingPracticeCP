@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import ReserveComp from './components/ReserveComp';
+
+
 
 function App() {
   return (
@@ -19,7 +20,6 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <ReserveComp></ReserveComp>
     </div>
   );
 }
