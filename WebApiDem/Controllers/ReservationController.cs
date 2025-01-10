@@ -9,8 +9,8 @@ namespace WebApiDem.Controllers
     [Route("api/[controller]")]
     public class ReservationController : ControllerBase
     {
-        private IRespository repository;
-        public ReservationController(IRespository repos) => repository = repos;
+        private IRepository repository;
+        public ReservationController(IRepository repos) => repository = repos;
 
         [HttpGet]
         public IEnumerable<Reservation> Get() => repository.Reservation;
@@ -23,9 +23,15 @@ namespace WebApiDem.Controllers
                 return BadRequest("value must be passed in the request body");
             return Ok(repository[id]);
         }
-        [HttpPost]
 
-        public Reservation Post([FromBody] Reservation res) => repository.AddReservation(new Reservation
+        [HttpPost]
+        public Reservation Post([FromForm] Reservation res) => addRep(res);
+
+
+           private Reservation addRep(Reservation res)
+        {
+            Console.WriteLine("post request");
+            repository.AddReservation(new Reservation
            {
               
                Id=res.Id,
@@ -34,6 +40,9 @@ namespace WebApiDem.Controllers
                EndLocation=res.EndLocation
 
            });
+            return res;
+        }
+
         [HttpPut]
 
         public Reservation Put([FromForm] Reservation res) => repository.UpdateReservation(res);

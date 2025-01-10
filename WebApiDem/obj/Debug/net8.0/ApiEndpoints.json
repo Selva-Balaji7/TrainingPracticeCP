@@ -28,9 +28,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "res",
-        "Type": "WebApiDem.Models.Reservation",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartLocation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndLocation",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
