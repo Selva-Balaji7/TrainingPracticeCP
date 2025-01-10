@@ -6,33 +6,11 @@
     ViewData["Title"] = "Employee List";
 }
 
-
-
-@model string
-
-<h2>Login Form</h2>
-
-@{
-    if (Model != null)
-    {
-    <h3 class="p-3 mb-2 bg-success text-white ">@Model</h3>    
-    }
-}
-<form method="post">
-    <div class="form-group">
-        <label>Id:</label>
-        <input class="form-control" name="id"/>
-    </div>
-    <div class="form-group">
-        <label>Name:</label>
-        <input class="form-control" name="name" />
-    </div>
-    <button type="submit" class="btn btn-outline-success">submit</button>
-
+    @model IEnumerable<Employee>
+<form method="post" asp-action="Login">
+    <button type="submit" class="btn btn-info">Login</button>
 </form>
-
-   @*  @model IEnumerable<Employee>
-
+ <br />
      <h1 class="bg-info text-white">Employee List</h1>
      <a asp-action="Ecreate" class="btn btn-secondary">Add Employee</a>
      <table class="table table-sm table-bordered">
@@ -63,4 +41,6 @@
              </tr>
          }
 
-    </table>*@
+    </table>
+
+    ﻿

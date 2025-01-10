@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApiDem-ui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30687d3aac3a7a085a9edef905e7a34ee8e374cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a578f5c078bedcc6056c58bc2b067b58521131f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApiDem-ui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApiDem-ui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

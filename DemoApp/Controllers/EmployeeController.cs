@@ -16,21 +16,17 @@ namespace DemoApp.Controllers
         }
         public IActionResult Eindex()
         {
-            //return View(context.Employee.Include(s => s.Department));
-            return View();
+            return View(context.Employee.Include(s => s.Department));
+            //return View();
         }
         [HttpPost]
-        public IActionResult Eindex(int id, string name)
+        public IActionResult Login(int id, string name)
         {
             string message = $"Welcome Employee Name:{name} of Id:{id}";
             return View((Object)message);
         }
-
-      
         
-
-
-
+     
         public IActionResult Ecreate()
         {
             List<SelectListItem> dept = new List<SelectListItem>();

@@ -13,20 +13,20 @@ namespace WebApiDem.Controllers
             _logger = logger;
              context = context;
         }
-        public string CreateReservation()
-        {
-            var res = new Reservation()
-            {
-             Id = 100,
-             Name = "selva balaji",
-             StartLocation = "Kanchipuram",
-             EndLocation = "Chennai"
-            };
-            context.Entry(res).State = Microsoft.EntityFrameworkCore.EntityState.Added;
-            context.SaveChanges();
+        //public string CreateReservation()
+        //{
+        //    var res = new Reservation()
+        //    {
+        //     Id = 100,
+        //     Name = "selva balaji",
+        //     StartLocation = "Kanchipuram",
+        //     EndLocation = "Chennai"
+        //    };
+        //    context.Entry(res).State = Microsoft.EntityFrameworkCore.EntityState.Added;
+        //    context.SaveChanges();
 
-            return "records inserted";
-        }
+        //    return "records inserted";
+        //}
         public IActionResult Index()
         {
             return View();

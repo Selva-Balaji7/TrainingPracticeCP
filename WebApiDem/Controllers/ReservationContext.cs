@@ -9,7 +9,7 @@ namespace WebApiDem.Controllers
     {
       
             public ReservationContext(DbContextOptions<ReservationContext> options) : base(options) { }
-            public DbSet<Reservation> Reservation{ get; set; }
+            public DbSet<Reservation> Reservations{ get; set; }
 
           
 
