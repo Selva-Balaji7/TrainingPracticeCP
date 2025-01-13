@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Inheritance concept in ES-6</h2>
+    <script>
+       class Car{
+              constructor(carname,caryear){
+                this.brand = carname;
+                this.model = caryear;
+              }
+
+              display(){
+                return "I have a car " + this.brand + " of year " + this.model;
+
+              }
+
+       }
+       class Bike extends Car{
+            constructor(name,year,carname,caryear){
+            super(carname,caryear);
+            this.bikebrand = name;
+            this.bikemodel=year;
+            }
+            show(){
+                return this.display() + " and bike with " +this.bikebrand+" of "+this.bikemodel;
+            }
+       }
+       let mybike=new Bike("Honda",2019,"Ford",2014);
+       document.write(mybike.show());
+    </script>
+</body>
+</html>

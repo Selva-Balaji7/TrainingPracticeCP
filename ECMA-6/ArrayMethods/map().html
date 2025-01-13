@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <h3>map method</h3>
+  <body>
+    <script>
+      document.write("type-1:<br>");
+      var numbers = [1, 2, 3, 4, 5];
+      var items = numbers.map(mulitply);
+      document.write(JSON.stringify(items));
+      console.log(JSON.stringify(items));
+
+      function mulitply(numbers) {
+        return numbers * 2;
+      }
+     document.write("----------------------------------------------------------------<br>");
+     document.write("type-2:<br>");
+     var numbers = [1, 2, 3, 4, 5];
+     numbers.map(items => items * 2);//using arrow function
+     document.write(JSON.stringify(items));
+    //   items=()=>{  //arrow function
+    //     return items*2;
+    //   }
+    document.write("----------------------------------------------------------------<br>");
+    document.write("type-3:<br>");
+    var myfruits = ["apple", "Orange", "banana"];
+    var mylist = myfruits.map(items => items.toUpperCase());
+    document.write(JSON.stringify(mylist));
+     
+
+
+      //   
+    </script>
+  </body>
+</html>

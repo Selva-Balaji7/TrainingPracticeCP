@@ -20,14 +20,12 @@ function AddResComp() {
 
     const submitData = (event) => {
         event.preventDefault();
-        console.log(reservation);
-        
-        /*axios.post(url, reservation).then(()=>{*/
-
-        axios.post("http://localhost:5166/api/Reservation",reservation).then(()=>{
+        console.log("submitted data",reservation);
+        axios.post("http://localhost:5166/api/reservation",reservation).then(()=>{
             window.alert("Added Successfully");
             nav("/");
-        }).catch((error)=>{});
+        })
+        .catch((error)=>{});
     }
 
 

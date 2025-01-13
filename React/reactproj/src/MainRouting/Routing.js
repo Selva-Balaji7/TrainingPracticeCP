@@ -13,6 +13,8 @@ import UseStateHooksComp from "../Hooks/UseStateHooks";
    import LogoutComp from "../Layout/LogoutComp";
    import LoginComp from "../Layout/LoginComp";
    import DataListComp from "../reduxCode/DataListComp";
+import ProductAddComp from "../Crud/ProductAddComp";
+import ProductEditComp from "../Crud/ProductEditComp";
 
 
 
@@ -22,14 +24,14 @@ const routing = createBrowserRouter([
 
 {path:"loginComp",element:<LoginComp/>},
 
-{path:"logout",element:<LogoutComp/>},
+{path:"/logout",element:<LogoutComp/>}, 
 
  {path:"maindashboard",element:<ProtectedRouting Component={MainDashBoardComp}/>, children:[
 
-       
-{path:"myfavcolorcomp",element:<MyFavColorComp newcolor="green"/>},
 
- {path:"formvalcomp", element:<FormValComp/>},
+  {path:"myfavcolorcomp",element:<MyFavColorComp newcolor="green"/>},
+
+  {path:"formvalcomp", element:<FormValComp/>},
 //     // // 3.parameterize routing
     {path:"classcomp/:id",element:<ClassComp/>},
 
@@ -37,8 +39,11 @@ const routing = createBrowserRouter([
         {path:"useeffect",element:<UseEffectHooksComp/>},
         {path:"usestate",element:<UseStateHooksComp/>},
     ]},
-  {path:"funccomp",element: <FuncComp/>},
-    {path:"ProductDashComp",element:<ProductDashComp/>},
+    {path:"funccomp",element: <FuncComp/>},
+    {path:"productdashcomp",element:<ProductDashComp/>},
+    {path:"productaddcomp",element:<ProductAddComp/>},
+    {path:"producteditcomp/:id",element:<ProductEditComp/>},
+   
     {path:"datalist",element:<DataListComp/>}
 
   ]},

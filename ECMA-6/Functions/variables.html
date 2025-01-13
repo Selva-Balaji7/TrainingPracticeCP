@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>variables in ES-6</h2>
+    <script>
+      document.write("var: <br>");
+      var b = 20;
+      display = () => {
+        var a = 10; //function scope,not blocked scope
+        document.write(a + " accessed as function scope <br>"); //accessible from inside the function
+        document.write(b + "accessing global variable <br>"); //accessible from inside the function
+      };
+      display();
+      // document.write(a+" accessed as global scope <br>");//not accessible from outside the function
+      document.write(b + " accessed as global scope <br>"); //accessible from outside the function
+      for (var b = 1; b < 4; b++) {
+        var c = 5;
+
+        document.write(c + " accessed as block scope <br>"); //accessible from inside the block
+      }
+      document.write(c + " accessed as global scope <br>"); //accessible from outside the block
+
+      document.write(
+        "----------------------------------------------------------------------------------<br>"
+      );
+      document.write("let:<br>");
+      let d = 20; // it has block scope
+      if (d == 20) {
+        let a = 4;
+        document.write(a + " accessed as block scope <br>"); //accessible from inside the block
+      }
+      document.write(d + " global scope variable<br>"); // accessible from outside the block
+      //document.write(a+" accessed as global scope <br>");//not accessible from outside the block
+
+      document.write(
+        "----------------------------------------------------------------------------------<br>"
+      );
+      document.write("const:<br>");
+      const name = "selva"; //constant variable
+      document.write(name + " accessing const variable in global scope <br>"); //accessible from outside the block
+      for (var i = 1; i < 4; i++) {
+        //name="siva";//cannot reassign the value to constant variable;
+        const name = "siva"; //but you can assign new value to the same variable name in block scope
+        document.write(name + " accessed as block scope <br>"); //accessible from inside the block
+      }
+      //const name="ruban";//cannot reassign the value to constant variable in global scope;
+      k = () => {
+        const name = "ruban"; //but you can assign new value to the same variable name in function scope
+        document.write(name + " accessed as function scope <br>"); //accessible from inside the function
+      };
+      k();
+    </script>
+  </body>
+</html>

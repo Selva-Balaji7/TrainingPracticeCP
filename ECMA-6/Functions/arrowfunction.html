@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>arrow functions</h2>
+    <script>
+      display = () => {
+        // document.write('this is arrow function type 1'+"<br>");
+        return "this is arrow function type 1";
+      };
+      document.write(display()+"<br>");
+
+      display1 = () => "hello world";
+      document.write(display1());
+
+      //arow function with parameters
+      greeting=(year)=>" welcome to "+year;
+      document.write(greeting(2025)+"<br>");
+
+      //arrow function without paranthesis
+      add=value=>value+50;
+        document.write(add(50));
+    </script>
+  </body>
+</html>

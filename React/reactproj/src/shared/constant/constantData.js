@@ -7,4 +7,4 @@ import vedio from '../../assests/vedio sample.mp4';
 const commonData={
     nature,himalayas,man,trees,vedio
 }
-export default commonData
+export default commonData;

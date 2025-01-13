@@ -1,4 +1,4 @@
-import "./loginComp.css"
+import react from "react";
 import { useNavigate } from "react-router-dom"
 import NavComp from "./NavComp";
 
@@ -10,6 +10,7 @@ const LogoutComp = () => {
         if (isconfirmLogout) {
             sessionStorage.clear();
             window.alert("logout successfully");
+            console.log("redirecting to /");
             nav("/");
         }
     }

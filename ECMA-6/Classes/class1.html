@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is the class feature in ES-6</h1>
+    <script>
+      class Car {
+        constructor(name, year) {
+          this.brand = name;
+          this.model = year;
+        }
+      }
+      var myCar = new Car("Ford", 2014);
+      var myCar1 = new Car("Audi", 2019);
+      document.write(myCar.brand + " " + myCar.model + "<br>");
+      document.write(myCar1.brand + " " + myCar1.model + "<br>");
+      console.log(myCar.brand + " " + myCar.model);
+    </script>
+  </body>
+</html>
