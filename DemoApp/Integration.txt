@@ -1,0 +1,203 @@
+//put these code in EmployeeController.cs
+
+using DEmployeeManagementSystem.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace DEmployeeManagementSystem.Controllers
+{
+    
+        [Route("api/[controller]")]
+        [ApiController]
+        public class EmployeeController : ControllerBase
+        {
+            private readonly EmployeeContext _context;
+
+            public EmployeeController(EmployeeContext context)
+            {
+                _context = context;
+            }
+
+            // GET: api/Employee
+            [HttpGet]
+            public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
+            {
+                return await _context.Employees.ToListAsync();
+            }
+
+            // GET: api/Employee/5
+            [HttpGet("{id}")]
+            public async Task<ActionResult<Employee>> GetEmployee(int id)
+            {
+                var employee = await _context.Employees.FindAsync(id);
+
+                if (employee == null)
+                {
+                    return NotFound();
+                }
+
+                return employee;
+            }
+
+            // POST: api/Employee
+            [HttpPost]
+            public async Task<ActionResult<Employee>> PostEmployee(Employee employee)
+            {
+                _context.Employees.Add(employee);
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction("GetEmployee", new { id = employee.Id }, employee);
+            }
+
+            // PUT: api/Employee/5
+            [HttpPut("{id}")]
+            public async Task<IActionResult> PutEmployee(int id, Employee employee)
+            {
+                if (id != employee.Id)
+                {
+                    return BadRequest();
+                }
+
+                _context.Entry(employee).State = EntityState.Modified;
+
+                try
+                {
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!EmployeeExists(id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+
+                return NoContent();
+            }
+
+            // DELETE: api/Employee/5
+            [HttpDelete("{id}")]
+            public async Task<IActionResult> DeleteEmployee(int id)
+            {
+                var employee = await _context.Employees.FindAsync(id);
+                if (employee == null)
+                {
+                    return NotFound();
+                }
+
+                _context.Employees.Remove(employee);
+                await _context.SaveChangesAsync();
+
+                return NoContent();
+            }
+
+            private bool EmployeeExists(int id)
+            {
+                return _context.Employees.Any(e => e.Id == id);
+            }
+        }
+}
+
+
+
+
+
+//put these code in program.cs
+
+
+using DEmployeeManagementSystem.Models;
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder =>
+        {
+            builder.AllowAnyOrigin()  // Allows any origin
+                   .AllowAnyMethod()  // Allows any HTTP method (GET, POST, etc.)
+                   .AllowAnyHeader(); // Allows any header
+        });
+});
+
+
+builder.Services.AddDbContext<EmployeeContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+}
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.UseCors("AllowAllOrigins");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
+
+
+//put these code in Employee.cs
+
+
+namespace DEmployeeManagementSystem.Models
+{
+    public class Employee
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Location { get; set; }
+    }
+}
+
+
+//put these code in EmployeeContext.cs
+
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+
+namespace DEmployeeManagementSystem.Models
+{
+    public class EmployeeContext:DbContext
+    {
+        public EmployeeContext(DbContextOptions<EmployeeContext> options) : base(options) { }
+
+        public DbSet<Employee> Employees { get; set; }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//appsettings.json
+ "ConnectionStrings": {
+     "DefaultConnection": "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Reservations;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
+ },
+
+
+
+
+

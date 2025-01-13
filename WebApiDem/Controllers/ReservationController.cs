@@ -25,13 +25,14 @@ namespace WebApiDem.Controllers
         }
 
         [HttpPost]
-        public Reservation Post([FromForm] Reservation res) => addRep(res);
-
-
+        public Reservation Post([FromBody] Reservation res) => addRep(res);
+        
            private Reservation addRep(Reservation res)
         {
+            Console.Clear();
+
             Console.WriteLine("post request");
-            repository.AddReservation(new Reservation
+            repository.AddReservation(new Reservation()
            {
               
                Id=res.Id,

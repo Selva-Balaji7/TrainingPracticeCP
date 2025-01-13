@@ -104,8 +104,8 @@ public class Repository : IRepository
 
     public Reservation AddReservation(Reservation reservation)
     {
-        Console.WriteLine(reservation.Id);
-        Console.WriteLine(reservation.Name);
+        //Console.WriteLine(reservation.Id);
+        //Console.WriteLine(reservation.Name);
         if (reservation.Id == 0)
         {
             int key = items.Count;
@@ -113,6 +113,8 @@ public class Repository : IRepository
             reservation.Id = key;
         }
         items[reservation.Id] = reservation;
+        foreach(var item in items)
+            Console.Write(item.Key + "--" +item.Value);
         return reservation;
     }
    
