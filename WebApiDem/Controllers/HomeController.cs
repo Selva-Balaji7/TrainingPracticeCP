@@ -7,11 +7,10 @@ namespace WebApiDem.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private ReservationContext context;
-        public HomeController(ILogger<HomeController> logger,ReservationContext context)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-             context = context;
+          
         }
         //public string CreateReservation()
         //{

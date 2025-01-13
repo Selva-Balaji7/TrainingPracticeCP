@@ -77,62 +77,53 @@ public class Repository : IRepository
 */
 
 
-using WebApiDem.Controllers;
+using Microsoft.AspNetCore.DataProtection.KeyManagement;
 
-namespace WebApiDem.Models;
-
-public class Repository : IRepository
+namespace WebApiDem.Models
 {
-    private Dictionary<int, Reservation> items;
-    public Repository()
-    { 
-        items = new Dictionary<int, Reservation>();
+    public class Repository : IRepository
+    {
+        private Dictionary<int, Reservation> items;
 
-        new List<Reservation>
+        public Repository()
         {
-         new Reservation{Id=1,Name="Parag",StartLocation="pune",EndLocation="chennai"},
-         new Reservation{Id=2,Name="Prachi",StartLocation="Delhi",EndLocation="chennai"},
-         new Reservation{Id=3,Name="Manas",StartLocation="chennai",EndLocation="pune"},
-         new Reservation{Id=4,Name="Deesha",StartLocation="pune",EndLocation="chennai"},
-        }.ForEach(r => AddReservation(r));
-    }
+            items = new Dictionary<int, Reservation>();
+            new List<Reservation>() {
+                new Reservation() {Id = 1, Name= "Anbu", StartLocation="Chennai", EndLocation="Mumbai" },
+                new Reservation() {Id = 2, Name= "Ajay", StartLocation="Kanayakumari", EndLocation="Mumbai" },
+                new Reservation() {Id = 3, Name= "Manoj", StartLocation="Chennai", EndLocation="madurai" },
+                new Reservation() {Id = 4, Name= "Sanjay", StartLocation="Chennai", EndLocation="Thiruchi" },
+            }.ForEach(r => AddReservation(r));
+        }
 
-    public Reservation this[int id] => items.ContainsKey(id) ? items[id] : null;
-   
-    public IEnumerable<Reservation> Reservation=>items.Values;
+        public Reservation this[int id] => items.ContainsKey(id) ? items[id] : null;
 
+        public IEnumerable<Reservation> Reservation => items.Values;
 
     public Reservation AddReservation(Reservation reservation)
-    {
-        //Console.WriteLine(reservation.Id);
-        //Console.WriteLine(reservation.Name);
-        if (reservation.Id == 0)
         {
-            int key = items.Count;
-            while (items.ContainsKey(key)) { key++; };
-            reservation.Id = key;
-        }
-        items[reservation.Id] = reservation;
-        foreach(var item in items)
-            Console.Write(item.Key + "--" +item.Value);
-        return reservation;
-    }
-   
-    public void DeleteReservation(int id)
-    {
-        foreach (Reservation res in items.Values)
-        {
-            if (res.Id == id)
+            if (reservation.Id == 0)
             {
-                items.Remove(id);
+                int key = items.Count;
+                while (items.ContainsKey(reservation.Id))
+                {
+                    Console.WriteLine("While condition is true");
+                    key++;
+                }
+                reservation.Id = key;
             }
+            items[reservation.Id] = reservation;
+            return reservation;
+        }
+
+        public void DeleteReservation(int id)
+        {
+            items.Remove(id);
+        }
+
+        public Reservation UpdateReservation(Reservation reservation)
+        {
+            return AddReservation(reservation);
         }
     }
-
-    public Reservation UpdateReservation(Reservation reservation)
-    {
-        return AddReservation(reservation);
-    }
-
-
 }

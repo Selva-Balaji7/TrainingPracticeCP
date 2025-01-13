@@ -46,12 +46,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/selva.balaji/Desktop/.NET/DemoApp/Views/Employee/Eupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRXVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/selva.balaji/Desktop/.NET/DemoApp/Views/Employee/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/selva.balaji/Desktop/.NET/DemoApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/selva.balaji/Desktop/.NET/DemoApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/selva.balaji/Desktop/.NET/DemoApp/Views/Home/SessionExample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXNzaW9uRXhhbXBsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/selva.balaji/Desktop/.NET/DemoApp/Views/Home/TempDataExample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZW1wRGF0YUV4YW1wbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/selva.balaji/Desktop/.NET/DemoApp/Views/Home/ViewBagExample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3QmFnRXhhbXBsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/selva.balaji/Desktop/.NET/DemoApp/Views/Shared/Error.cshtml]
