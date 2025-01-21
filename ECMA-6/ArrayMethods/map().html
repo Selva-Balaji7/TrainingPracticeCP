@@ -13,6 +13,8 @@
       var items = numbers.map(mulitply);
       document.write((numbers));
       console.log(JSON.stringify(items));
+      document.write(items); //to show in array format use(JSON.stringfy)
+      console.log(items);
 
       function mulitply(numbers) {
         return numbers * 2;
@@ -22,7 +24,7 @@
      var numbers = [1, 2, 3, 4, 5];
      numbers.map(items => items * 2);//using arrow function
      document.write(JSON.stringify(items));
-    //   items=()=>{  //arrow function
+    //   items=()=>{  //arrow function ------> items=>items*2
     //     return items*2;
     //   }
     document.write("----------------------------------------------------------------<br>");

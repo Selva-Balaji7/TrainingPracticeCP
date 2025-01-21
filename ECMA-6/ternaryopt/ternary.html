@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ternary operator</h2>
+    <h3 id="demo"></h3>
+    <script>
+        let authen=true;
+        renderApp=()=>{
+            document.getElementById("demo").innerHTML='welcome!';
+        }
+        renderLogin=()=>{
+            document.getElementById("demo").innerHTML="please Login";
+        }
+        if(authen)
+        {
+         renderApp();
+        }
+        else
+        {
+         renderLogin();
+        }
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>spread operator</h2>
+    <script>
+        const num1=[1,2,3];
+        const num2=[4,5,6];
+
+        let totnum=[...num1,num2];
+        let totnum1=[num1,...num2];
+       document.write(totnum+'<br>');
+       console.log(totnum);
+       document.write(totnum1);
+       console.log(totnum1);
+
+
+       let obj1={
+        "Name":"selva",
+        "age":"22",
+         "EmpId":"4583"
+       };
+       let obj2={
+         "Name":"tharun",
+         "age:":"23",
+         "EmpId":"4356"
+       };
+       const arr=[obj1,obj2];
+        console.log(arr);
+    //    obj[0].age='23';
+    //    console.log(obj);
+    //    const objarr={...obj1,...obj2};
+    //    document.write(objarr);
+    //    console.log(objarr);
+    //    const objarr1={...obj1,obj2};
+    //    document.write(objarr1);
+    //    console.log(objarr1);
+    //    const objarr2={obj1,...obj2};
+    //    document.write(objarr2);
+    //    console.log(objarr2);
+       let arr1=[arr]
+       console.log(arr1);
+       console.log(...arr1);
+       name="Name";
+       value="balaji";
+       
+
+    </script>
+    
+    
+</body>
+</html>

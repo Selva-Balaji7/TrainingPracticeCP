@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const vehiclesObj = {
+            vehicle: "bike",
+            brand: "pulsar",
+            model: "ns200",
+            year: "2023",
+
+        }
+        function transport({ vehicle, brand, model, year }) {
+            const message = `the vehicle is ${vehicle} and brand ${brand} with model ${model} launched ${year}`
+            document.getElementById("demo").innerHTML = message;
+        }
+        transport(vehiclesObj);
+
+        const vehicleObj2 = {
+
+        }
+        const vehicleOne = {
+            brand: 'Ford',
+            model: 'Mustang',
+            type: 'car',
+            year: 2021,
+            color: 'red',
+            registration: {
+                city: 'Houston',
+                state: 'Texas',
+                country: 'USA'
+            }
+        }
+
+        myVehicle(vehicleOne)
+
+        function myVehicle({ model, registration: { state,country } }) {
+            var message = 'My ' + model + ' is registered in ' + state + ' in '+ country;
+            document.getElementById("demo1").innerHTML = message;
+        }
+      
+
+    </script>
+</body>
+
+</html>

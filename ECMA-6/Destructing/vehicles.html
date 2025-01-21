@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>destructing</h2>
+    <script>
+        let vehicles=['yamaha','benz','Eicher']
+        const [bike,,truck]=vehicles;
+        document.write(bike+'<br>'+truck+'<br>');
+       
+        function math(a,b)
+        {
+            const add=(a+b);
+            const sub=(a-b);
+            const mult=(a*b);
+
+            return[add,sub,mult]
+        }
+         calc= [add,sub,mult]=math(3,6);
+
+        document.write(calc);
+    </script>
+</body>
+</html>
