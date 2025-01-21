@@ -16,7 +16,7 @@ const LogoutComp = () => {
     }
 return (
     <div>
-        <NavComp exit={Logout}></NavComp>
+      {Logout()}
     </div>
 )
 }

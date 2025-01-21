@@ -15,7 +15,7 @@ const NavComp=({exit})=>{
             <Link to="myfavcolorcomp" className="btn btn-primary btm-sm me-3">myfavcolour</Link>
             <Link to="formvalcomp" className="btn btn-primary btm-sm me-4">myform</Link>
             <Link to="ProductDashComp" className="btn btn-primary btm-sm me-4">productdashcomp</Link>
-            <Link to="/logout" id="log" className='btn btn-danger me-2'><LogoutIcon></LogoutIcon></Link>
+            <Link to="/logout" className='btn btn-danger me-2'><LogoutIcon></LogoutIcon></Link>
             <Link to="datalist" className="btn btn-primary btn me-2">DataListComp</Link>    
             
 

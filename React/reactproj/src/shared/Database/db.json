@@ -13,6 +13,13 @@
       "pprice": "48000",
       "pcompany": "Dell",
       "pquantity": "1"
+    },
+    {
+      "id": "b8b7",
+      "pname": "pendrive",
+      "pprice": "5500",
+      "pcompany": "Sandisk",
+      "pquantity": "2"
     }
   ],
   "users": [
