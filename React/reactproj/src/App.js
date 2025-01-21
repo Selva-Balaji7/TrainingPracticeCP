@@ -13,6 +13,8 @@ import MyImageComp from './component/MyImageComp';
 import UserComp from './component/UserComp';
 import UserComp1 from './component/UserComp1';
 import ErrorBoundaryComp from './component/ErrorBoundaryComp';
+import Arrays from './ES6/Arrays';
+import Destructing from './ES6/destructing';
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
           Learn React
         </a>
       </header>  */}
+      <Arrays list={[1,2,3,4,5]}></Arrays>
+      <Destructing></Destructing>
       {/* <MyStateComp></MyStateComp>  */}
       {/* {<h1>welcome to all </h1>}
        <FuncComp fname="selva Balaji" department="IT" role="Fullstack Developer"></FuncComp> 
@@ -57,6 +61,7 @@ function App() {
            <UserComp1 user="Rahul"></UserComp1>
        </ErrorBoundaryComp>
        <UserComp1></UserComp1> */}
+       
         
     </div>
   );

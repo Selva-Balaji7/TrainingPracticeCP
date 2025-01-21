@@ -77,8 +77,6 @@ const ProductDashComp = () => {
                                 <td>{val.pquantity}</td>
 
 
-
-
                                 <button type='button' onClick={() => handleShow(val)} className='btn btn-danger me-2' >
                                 <RemoveRedEyeIcon/>
                                 </button>
