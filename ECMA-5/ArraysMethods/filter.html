@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     let age=[12,32,18,15,20,21,40];
+     let filterage=age.filter((val,index)=>
+    {
+        document.write(`value:${val},Index:${index}<br>`);
+        return val>18
+    })
+    document.write(`the eligible vote ages are:${filterage}<br>`);
+
+    let numbers=[2,9,6,3,10,12];
+    let filternum=numbers.filter(myfun);
+    function myfun(num)
+    {
+     return num%2==0
+    }
+    console.log(`${filternum}`);
+
+
+
+    
+   </script>
+    
+</body>
+</html>

@@ -16,6 +16,7 @@ import ErrorBoundaryComp from './component/ErrorBoundaryComp';
 import Arrays from './ES6/Arrays';
 import Destructing from './ES6/destructing';
 import SpreadComp from './component/spreadopt';
+import UseStateHooksComp from './Hooks/UseStateHooks';
 
 
 function App() {
@@ -35,9 +36,10 @@ function App() {
           Learn React
         </a>
       </header>  */}
+      <UseStateHooksComp></UseStateHooksComp>
       {/* <Arrays list={[1,2,3,4,5]}></Arrays> */}
       {/* <Destructing></Destructing> */}
-      <SpreadComp></SpreadComp>
+      {/* <SpreadComp></SpreadComp> */}
       {/* <MyStateComp></MyStateComp>  */}
       {/* {<h1>welcome to all </h1>}
        <FuncComp fname="selva Balaji" department="IT" role="Fullstack Developer"></FuncComp> 
