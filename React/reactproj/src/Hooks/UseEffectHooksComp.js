@@ -11,9 +11,9 @@ const [age,setAge]=useState(18);
 // })
 
 // 2.when we pass dependencies values as blank array
-useEffect(()=>{
-    setAge(age+1);
-},[])
+// useEffect(()=>{
+//     setAge(age+1);
+// },[])
 
 //case3: when we have to execute useEffect hook as we want 
 // useEffect(()=>{
@@ -22,7 +22,7 @@ useEffect(()=>{
 
     return (
         <div>
-            <h2>yhis is Use Effect hook component</h2>
+            <h2>this is UseEffect hook component</h2>
             <p>Age is :{age}</p>
             <p>Salart is:{sal}</p>
             <button type="button" onClick={()=>setSal(sal+5000)} 

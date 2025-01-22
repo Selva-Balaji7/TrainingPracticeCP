@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import UseStateHooksComp from './Hooks/UseStateHooks';
+import EventtargetComp from './EventTarget/type-1';
+import UseEffectHookComp from './Hooks/UseEffectHooks';
+
+
 
 function App() {
   return (
@@ -18,6 +23,9 @@ function App() {
           Learn React
         </a>
       </header> */}
+      {/* <UseStateHooksComp></UseStateHooksComp> */}
+       <UseEffectHookComp></UseEffectHookComp>
+      {/* <EventtargetComp></EventtargetComp> */}
     </div>
   );
 }
