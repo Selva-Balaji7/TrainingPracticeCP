@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import UseStateHooksComp from './Hooks/UseStateHooks';
 import EventtargetComp from './EventTarget/type-1';
-import UseEffectHookComp from './Hooks/UseEffectHooks';
+ import UseEffectHookComp from './Hooks/UseEffectHooks';
+import ClassCounterOneComp from './ClassComp/ClassCounterOne';
 
 
 
@@ -23,6 +24,8 @@ function App() {
           Learn React
         </a>
       </header> */}
+
+      {/* <ClassCounterOneComp></ClassCounterOneComp> */}
       {/* <UseStateHooksComp></UseStateHooksComp> */}
        <UseEffectHookComp></UseEffectHookComp>
       {/* <EventtargetComp></EventtargetComp> */}

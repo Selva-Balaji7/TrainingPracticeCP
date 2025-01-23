@@ -43,13 +43,13 @@ function App() {
       {/* <MyStateComp></MyStateComp>  */}
       {/* /* {<h1>welcome to all </h1>} */}
        {/* <FuncComp fname="selva Balaji" department="IT" role="Fullstack Developer"></FuncComp>  */}
-      <ClassComp fname="selva balaji" role="program analyst" company="Changepond"></ClassComp>
+      {/* <ClassComp fname="selva balaji" role="program analyst" company="Changepond"></ClassComp> */}
       {/* <ConditionalRenComp></ConditionalRenComp> 
       {/* <SelvaComp fname="Tharun Balaji" salary={10000000} post="fullstack-Developer" gender="Male" address="chennai"></SelvaComp> 
       <EventComp></EventComp>
        <CssComp></CssComp> */} 
         {/* <ParentComp gender="Male" contact="9289383821"></ParentComp>  */}
-       {/* <ClickCounterComp></ClickCounterComp> */}
+       <ClickCounterComp></ClickCounterComp>
        {/* <MyImageComp></MyImageComp> */}
        {/* <UserComp user="selva balaji"></UserComp> */}
        {/* <ErrorBoundaryComp>
