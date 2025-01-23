@@ -10,22 +10,45 @@ const UseEffectHookComp=()=>{
     //  setAge(age+1)
     // })
 
-    //case 2:when we pass dependencies values as blank array
-// useEffect(()=>{
-//     setAge(age+1);
-// },[])
+    //case 2:when we pass dependencies values as blank array---->Mounting(componentDidMount)
+useEffect(()=>{
+    setAge(age+1);
+},[])
 
-    //case 3:when we have to execute useEffect hook as we want 
-    useEffect(()=>{
-        setAge(age+1)
-    },[sal])
-    return(
+    //case 3:when we have to execute useEffect hook as we want ---->Updating(componentDidUpdate)
+    // useEffect(()=>{
+    //     setAge(age+1)
+    // },[sal])
+    // return(
 
-         <div>
-            <p>your age:{age}</p>
-            <p>your sal:{sal}</p>
-            <button className="btn btn-primary" onClick={()=>setSal(sal+20000)}>change salary</button>
-         </div>
+    //      <div>
+    //         <p>your age:{age}</p>
+    //         <p>your sal:{sal}</p>
+    //         <button className="btn btn-primary" onClick={()=>setSal(sal+20000)}>change salary</button>
+    //      </div>
+    // )
+
+    //case4:cleaning up the effects -----> Unmounting(componentWillUnmount)
+
+    const [seconds, setSeconds]=useState(0);
+        useEffect(()=>{
+        cosetInterval(()=>{
+         setSeconds(prev=>prev+1);
+         console.log("running interval")
+    },1000);
+    //cleans up unmount
+     return(()=>{
+        clearInterval(interval);
+        })
+    },[]);
+
+
+    return (
+        <div>
+           <p>timer:{seconds}</p> 
+           <button type="button" className="btn btn-primary" onClick={}>click me!</button>
+        </div>
     )
+
 }
 export default UseEffectHookComp;

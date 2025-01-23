@@ -36,15 +36,15 @@ function App() {
           Learn React
         </a>
       </header>  */}
-      <UseStateHooksComp></UseStateHooksComp>
+      {/* <UseStateHooksComp></UseStateHooksComp> */}
       {/* <Arrays list={[1,2,3,4,5]}></Arrays> */}
       {/* <Destructing></Destructing> */}
       {/* <SpreadComp></SpreadComp> */}
       {/* <MyStateComp></MyStateComp>  */}
-      {/* {<h1>welcome to all </h1>}
-       <FuncComp fname="selva Balaji" department="IT" role="Fullstack Developer"></FuncComp> 
-      <ClassComp fname="panchashil" role="Trainer" company="hematite"></ClassComp>
-      {/* <ConditionalRenComp></ConditionalRenComp> */}
+      {/* /* {<h1>welcome to all </h1>} */}
+       {/* <FuncComp fname="selva Balaji" department="IT" role="Fullstack Developer"></FuncComp>  */}
+      <ClassComp fname="selva balaji" role="program analyst" company="Changepond"></ClassComp>
+      {/* <ConditionalRenComp></ConditionalRenComp> 
       {/* <SelvaComp fname="Tharun Balaji" salary={10000000} post="fullstack-Developer" gender="Male" address="chennai"></SelvaComp> 
       <EventComp></EventComp>
        <CssComp></CssComp> */} 
