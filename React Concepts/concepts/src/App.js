@@ -2,10 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import UseStateHooksComp from './Hooks/UseStateHooks';
 import EventtargetComp from './EventTarget/type-1';
- import UseEffectHookComp from './Hooks/UseEffectHooks';
+import UseEffectHookComp from './Hooks/UseEffectHooks';
 import ClassCounterOneComp from './ClassComp/ClassCounterOne';
 import UseRefComp from './Hooks/UseRef';
-import Component1 from './Hooks/UseContext';
+import Component1 from './Hooks/UseContext/Example1propdrilling';
+import Example2 from './Hooks/UseContext/Example2';
+import Stopwatch from './Hooks/UseReducer';
 
 
 
@@ -26,7 +28,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Component1></Component1>
+      <Stopwatch></Stopwatch>
+      {/* <Example2></Example2> */}
+      {/* <Component1></Component1> */}
       {/* <UseRefComp></UseRefComp> */}
       {/* <ClassCounterOneComp></ClassCounterOneComp> */}
       {/* <UseStateHooksComp></UseStateHooksComp> */}

@@ -3,7 +3,7 @@ import {useState} from 'react'
 
 //const UserContext=createContext();
 function Component1(){
-    const [user,setUser]=useState('selva balaji');
+    const [user]=useState('selva balaji');
     return(
         <>
           <h2>Component1</h2>
@@ -36,7 +36,7 @@ function Component1(){
     return(
         <>
         <h3>Component4</h3>
-        <Component4 user={user}/>
+        <Component5 user={user}/>
         
         </>
     )
@@ -45,7 +45,7 @@ function Component1(){
     return(
         <>
          <h4>Component 5</h4>
-         <h3>`this is lowest child component ${user}`</h3>
+         <h3>this is component 5 which is lowest child component {user}</h3>
          
         </>
     )
