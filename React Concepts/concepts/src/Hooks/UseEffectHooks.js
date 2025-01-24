@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 
+
 const UseEffectHookComp=()=>{
 
 //     const[age,setAge]=useState(19);
@@ -54,5 +55,4 @@ const UseEffectHookComp=()=>{
     )
 }
 
-// }
- export default UseEffectHookComp;
+    export default UseEffectHookComp;

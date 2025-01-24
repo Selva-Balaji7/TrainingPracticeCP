@@ -4,6 +4,8 @@ import UseStateHooksComp from './Hooks/UseStateHooks';
 import EventtargetComp from './EventTarget/type-1';
  import UseEffectHookComp from './Hooks/UseEffectHooks';
 import ClassCounterOneComp from './ClassComp/ClassCounterOne';
+import UseRefComp from './Hooks/UseRef';
+import Component1 from './Hooks/UseContext';
 
 
 
@@ -24,10 +26,11 @@ function App() {
           Learn React
         </a>
       </header> */}
-
+      <Component1></Component1>
+      {/* <UseRefComp></UseRefComp> */}
       {/* <ClassCounterOneComp></ClassCounterOneComp> */}
       {/* <UseStateHooksComp></UseStateHooksComp> */}
-       <UseEffectHookComp></UseEffectHookComp>
+       {/* <UseEffectHookComp></UseEffectHookComp> */}
       {/* <EventtargetComp></EventtargetComp> */}
     </div>
   );
