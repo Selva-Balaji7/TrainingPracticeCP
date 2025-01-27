@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import UseStateHooksComp from './Hooks/UseStateHooks';
-import EventtargetComp from './EventTarget/type-1';
 import UseEffectHookComp from './Hooks/UseEffectHooks';
 import ClassCounterOneComp from './ClassComp/ClassCounterOne';
 import UseRefComp from './Hooks/UseRef';
 import Component1 from './Hooks/UseContext/Example1propdrilling';
 import Example2 from './Hooks/UseContext/Example2';
 import Stopwatch from './Hooks/UseReducer';
+import UseMemoHook from './Hooks/UseMemoHook';
+import Factorial from './Hooks/useCallbackHook';
+import SampleClassComp from './ClassComp/SampleClassComp';
+import PropsComp from './ClassComp/PropsComp';
+import ConditionalComp from './ConditionalRendering/ConditionalComp';
+import EventtargetComp from './EventTargetExample/type-1';
 
 
 
@@ -28,14 +33,19 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Stopwatch></Stopwatch>
+      {/* <SampleClassComp/> */}
+      <ConditionalComp></ConditionalComp>
+      {/* <PropsComp name="selvabalaji" company="changepond"></PropsComp> */}
+      {/* <UseMemoHook></UseMemoHook> */}
+      {/* <Factorial></Factorial>  */}
+      {/* <Stopwatch></Stopwatch> */}
       {/* <Example2></Example2> */}
       {/* <Component1></Component1> */}
       {/* <UseRefComp></UseRefComp> */}
       {/* <ClassCounterOneComp></ClassCounterOneComp> */}
       {/* <UseStateHooksComp></UseStateHooksComp> */}
        {/* <UseEffectHookComp></UseEffectHookComp> */}
-      {/* <EventtargetComp></EventtargetComp> */}
+       {/* <EventtargetComp></EventtargetComp> */}
     </div>
   );
 }
