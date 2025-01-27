@@ -1,0 +1,37 @@
+
+Contents
+
+1.React Introduction
+2.Technology Prerequisites
+3.s/w Prerequisites
+4.Create react project
+5.How to start react proj
+6.React folder structure
+7.React render
+8.React Jsx
+9.React components
+10.React props
+11.React States
+12.React Events
+13.React Conditionals
+14.React Css Styling
+15.React Fragments
+16.Destructuring state/props
+17.Component interaction
+18.HOC(higer order Component)
+19.Error Boundary
+20.React Routing
+21.Class Components Lifecycle
+22.Virtual Dom
+23.React Hooks
+24.Crud fake API(Axios)
+25 React Lists
+26.React Forms
+27.React Concurrently
+28.Web Storages
+29.React Bootstap
+30.React redux code
+31.JWT Tokens
+32.Interception
+
+
