@@ -1,7 +1,12 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 export const EventtargetComp = () => {
 
+    useEffect(()=>{
+     console.log("Event target component");
+     
+    })
+    
     function handleChange(event)
     {
      console.log(event.target);

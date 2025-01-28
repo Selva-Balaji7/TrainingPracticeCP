@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj1 = {
+            Name : "Selva",
+            Age : "22",
+            EmpId : "4583"
+        }
+        let obj2 = {
+            Name : "Tharun",
+            Age : "23",
+            EmpId : "4556"
+        }
+
+        let arr, arr2;
+        
+        function handleinput(target){
+            const {value, name} = target;
+            arr = [obj1, obj2];
+            arr2 = [{...obj1, [name]:value}, obj2]            
+        }
+        
+        handleinput({name : "EmpId", value:"12000", id:"12"});
+        handleinput({name : "Age", value:"25", id:"12"});
+        handleinput({name : "Name", value:"Balaji", id:"12"});
+
+        console.log(arr);
+        console.log(arr2);
+
+        const display = (event) => {
+            console.log(event.target);
+        }   
+        
+
+    </script>
+    <button type="button" class="ButtonClass" onclick="display(event)">click</button>
+    <input class="inputclass" onchange="display(event)" />
+    
+</body>
+</html>

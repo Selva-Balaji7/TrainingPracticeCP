@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-class SampleClassComp extends Component{
+class SetStateComp extends Component{
     constructor(){
      super()
      this.state={
@@ -25,4 +25,4 @@ class SampleClassComp extends Component{
         )
     }
 }
-export default SampleClassComp
+export default SetStateComp

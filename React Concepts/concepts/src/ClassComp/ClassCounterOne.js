@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import MyPureComp from '../PureComp.js/MyPureComp'
+import EventtargetComp from '../EventTargetExample/type-1'
 class ClassCounterOneComp extends Component{
     constructor(props){
         super(props)
@@ -18,7 +20,8 @@ class ClassCounterOneComp extends Component{
         return (
             <>
             <button onClick={()=>this.setState({count:this.state.count+1})}>click {this.state.count} times</button>
-            
+            <MyPureComp></MyPureComp>
+            <EventtargetComp></EventtargetComp>
             </>
         )
     }

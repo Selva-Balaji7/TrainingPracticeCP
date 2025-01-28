@@ -3,7 +3,7 @@ import React,{useState} from 'react'
  const ConditionalComp = () => {
     const[isCond]=useState("true");
     let msg="";
-    //1. if-else
+    // 1. if-else
     // if(isCond)
     // {
     //     msg="admin login successfully"
@@ -25,9 +25,14 @@ import React,{useState} from 'react'
     //4.short circuit condition
     msg=(isCond) && <h1>condition satisfied</h1>
     return (
-        <div>
-            <p>{msg}</p>
-        </div>
-    )
+        
+        (isCond) &&
+                
+                    <div>
+                    <p>"admin login successfully"</p>
+                    </div>
+                
+            // <p>{msg}</p>
+    );
 }
 export default ConditionalComp
