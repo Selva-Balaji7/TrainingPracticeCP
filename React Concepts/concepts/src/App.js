@@ -15,6 +15,7 @@ import ConditionalComp from './ConditionalRendering/ConditionalComp';
 import EventtargetComp from './EventTargetExample/type-1';
 import Examp1Comp from './FunComp/Examp1Comp';
 import FragmentClassComp from './ClassComp/Fragments';
+import DestructStateComp from './StateComp/destructionState';
 
 
 
@@ -40,7 +41,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <FragmentClassComp></FragmentClassComp>
+      <DestructStateComp></DestructStateComp>
+      {/* <FragmentClassComp></FragmentClassComp> */}
       {/* <Examp1Comp name={Emp.name} age={Emp.age} id={Emp.id}></Examp1Comp> */}
       {/* <SampleClassComp/> */}
       {/* <ConditionalComp></ConditionalComp> */}
