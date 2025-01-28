@@ -42,9 +42,9 @@ function App() {
       {/* <SpreadComp></SpreadComp> */}
       {/* <MyStateComp></MyStateComp>  */}
       {/* /* {<h1>welcome to all </h1>} */}
-       {/* <FuncComp fname="selva Balaji" department="IT" role="Fullstack Developer"></FuncComp>  */}
+       {/* <FuncComp fname="selva Balaji" department="IT" role="Fullstack Developer"></FuncComp>  */} 
       {/* <ClassComp fname="selva balaji" role="program analyst" company="Changepond"></ClassComp> */}
-       <ConditionalRenComp></ConditionalRenComp> 
+       {/* <ConditionalRenComp></ConditionalRenComp>  */}
       {/* <SelvaComp fname="Tharun Balaji" salary={10000000} post="fullstack-Developer" gender="Male" address="chennai"></SelvaComp> 
       <EventComp></EventComp>
        <CssComp></CssComp> */} 

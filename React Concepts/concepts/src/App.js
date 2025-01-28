@@ -13,10 +13,17 @@ import SampleClassComp from './ClassComp/SampleClassComp';
 import PropsComp from './ClassComp/PropsComp';
 import ConditionalComp from './ConditionalRendering/ConditionalComp';
 import EventtargetComp from './EventTargetExample/type-1';
+import Examp1Comp from './FunComp/Examp1Comp';
+import FragmentClassComp from './ClassComp/Fragments';
 
 
 
 function App() {
+  const Emp={
+     name:"Selva Balaji",
+     age:22,
+     id:4583
+  }
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -33,8 +40,10 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <FragmentClassComp></FragmentClassComp>
+      {/* <Examp1Comp name={Emp.name} age={Emp.age} id={Emp.id}></Examp1Comp> */}
       {/* <SampleClassComp/> */}
-      <ConditionalComp></ConditionalComp>
+      {/* <ConditionalComp></ConditionalComp> */}
       {/* <PropsComp name="selvabalaji" company="changepond"></PropsComp> */}
       {/* <UseMemoHook></UseMemoHook> */}
       {/* <Factorial></Factorial>  */}
