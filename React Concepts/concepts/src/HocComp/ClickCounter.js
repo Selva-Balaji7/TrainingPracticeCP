@@ -1,5 +1,5 @@
 import { Component } from "react";
- import MyHocComp from "./MyHocCom";
+import MyHocComp from "./MyHocComp";
 class ClickCounterComp extends Component{
     constructor(props){
         super(props)

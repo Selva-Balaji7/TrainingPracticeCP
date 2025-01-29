@@ -19,6 +19,8 @@ import DestructPropsComp from './Destruction/destructionProps';
 import DestructStateComp from './Destruction/destructionState';
 import ParentComp from './ComponentInteraction/parent';
 import MyPureComp from './PureComp.js/MyPureComp';
+import ClickCounter from './HocComp/ClickCounter';
+import MyHocComp from './HocComp/MyHocComp';
 
 function App() {
   // const Emp={
@@ -42,6 +44,7 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <ClickCounter></ClickCounter>
       {/* <ParentComp gender="Male" contact="9289383821"></ParentComp>  */}
       {/* <MyPureComp empName="selva"></MyPureComp> */}
       {/* <DestructStateComp></DestructStateComp>
@@ -57,7 +60,7 @@ function App() {
       {/* <Example2></Example2> */}
       {/* <Component1></Component1> */}
       {/* <UseRefComp></UseRefComp> */}
-      <ClassCounterOneComp></ClassCounterOneComp>
+      {/* <ClassCounterOneComp></ClassCounterOneComp> */}
       {/* <UseStateHooksComp></UseStateHooksComp> */}
        {/* <UseEffectHookComp></UseEffectHookComp> */}
        {/* <EventtargetComp></EventtargetComp> */}

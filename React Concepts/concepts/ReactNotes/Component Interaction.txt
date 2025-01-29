@@ -1,0 +1,32 @@
+Component Interaction:
+
+* Passing data from  parent component to child.
+* We can pass "state" and "Functions" as props
+* while performing component interaction in between component they must have child relation.
+
+How to establish parent child relation in between component?
+step-1: first we have to import child component in parent component.
+step-2: write child component name as tag in parent component.
+
+syntax: <childcomp name={empName} changename={this.changename}/>
+
+Pure-Component:
+
+ *  It is used to prevent unnecessary re-rendering component by performing shallow comparison
+ *  Achieved by extending class with PureComponent class.
+  
+  import React, { PureComponent } from "react";
+  class MyPureComp extends PureComponent
+
+React.Memo():
+
+ *It is used to prevent unnecessary re-rendering function component by performing shallow comparison.
+ *To achieve, we have to pass function component names as an argument to React.memo()
+
+Syntax:  export default React.memo(MyMemoComp);
+
+
+
+
+ 
+

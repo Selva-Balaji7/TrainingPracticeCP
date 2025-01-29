@@ -17,6 +17,7 @@ import Arrays from './ES6/Arrays';
 import Destructing from './ES6/destructing';
 import SpreadComp from './component/spreadopt';
 import UseStateHooksComp from './Hooks/UseStateHooks';
+import MyHocComp from './component/MyHocCom';
 
 
 function App() {
@@ -49,13 +50,13 @@ function App() {
       <EventComp></EventComp>
        <CssComp></CssComp> */} 
         {/* <ParentComp gender="Male" contact="9289383821"></ParentComp>  */}
-       {/* <ClickCounterComp></ClickCounterComp> */}
+       {/* <ClickCounterComp></ClickCounterComp>  */}
        {/* <MyImageComp></MyImageComp> */}
        {/* <UserComp user="selva balaji"></UserComp> */}
+         <ErrorBoundaryComp>
+           <UserComp user="Panchasil"></UserComp>
+        </ErrorBoundaryComp> 
        {/* <ErrorBoundaryComp>
-           <UserComp1 user="Panchasil"></UserComp1>
-       </ErrorBoundaryComp>
-       <ErrorBoundaryComp>
            <UserComp1 user="Rupesh"></UserComp1>
        </ErrorBoundaryComp>
        <ErrorBoundaryComp>
@@ -65,7 +66,6 @@ function App() {
            <UserComp1 user="Rahul"></UserComp1>
        </ErrorBoundaryComp>
        <UserComp1></UserComp1> */}
-       
         
     </div>
   );
