@@ -21,6 +21,8 @@ import ParentComp from './ComponentInteraction/parent';
 import MyPureComp from './PureComp.js/MyPureComp';
 import ClickCounter from './HocComp/ClickCounter';
 import MyHocComp from './HocComp/MyHocComp';
+import UserComp from './ErrorBoundary/UserComp';
+import ErrorBoundComp from './ErrorBoundary/ErrorBoundComp';
 
 function App() {
   // const Emp={
@@ -44,7 +46,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <ClickCounter></ClickCounter>
+      <ErrorBoundComp>
+         <UserComp name="selva"></UserComp>
+      </ErrorBoundComp>
+      {/* <ClickCounter></ClickCounter> */}
       {/* <ParentComp gender="Male" contact="9289383821"></ParentComp>  */}
       {/* <MyPureComp empName="selva"></MyPureComp> */}
       {/* <DestructStateComp></DestructStateComp>

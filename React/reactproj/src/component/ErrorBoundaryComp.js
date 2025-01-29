@@ -12,7 +12,7 @@ class ErrorBoundaryComp extends Component{
         }
     }
     componentDidCatch(error){
-        console.log(error);
+        console.log("Invalid user name");
     }
     render(){
         if(this.state.isCond){

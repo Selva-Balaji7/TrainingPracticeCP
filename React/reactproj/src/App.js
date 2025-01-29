@@ -18,6 +18,7 @@ import Destructing from './ES6/destructing';
 import SpreadComp from './component/spreadopt';
 import UseStateHooksComp from './Hooks/UseStateHooks';
 import MyHocComp from './component/MyHocCom';
+import VirtualDom from './component/VirtualDom';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           Learn React
         </a>
       </header>  */}
+      {/* <VirtualDom></VirtualDom> */}
       {/* <UseStateHooksComp></UseStateHooksComp> */}
       {/* <Arrays list={[1,2,3,4,5]}></Arrays> */}
       {/* <Destructing></Destructing> */}
@@ -53,9 +55,9 @@ function App() {
        {/* <ClickCounterComp></ClickCounterComp>  */}
        {/* <MyImageComp></MyImageComp> */}
        {/* <UserComp user="selva balaji"></UserComp> */}
-         <ErrorBoundaryComp>
-           <UserComp user="Panchasil"></UserComp>
-        </ErrorBoundaryComp> 
+         {/* <ErrorBoundaryComp>
+           <UserComp user="Selva"></UserComp>
+        </ErrorBoundaryComp>  */}
        {/* <ErrorBoundaryComp>
            <UserComp1 user="Rupesh"></UserComp1>
        </ErrorBoundaryComp>

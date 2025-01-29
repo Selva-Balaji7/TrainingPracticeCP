@@ -1,0 +1,81 @@
+Error Boundary:
+
+ *It is react component which is used to handle error occurs in child component tree while rendering.
+ *To handle we use two class component life cycle method.
+ *Provides a fallback UI: Instead of crashing entire app, it shows a friendly message
+ *Error boundaries are created using class components because they  rely on lifecycle methods like
+    1) getDerivedStateFromError:
+
+       * Updates the states when an error occurs in child component
+
+    2) componentDidCatch:
+       
+       * catches and logs the error details.
+
+Note:
+* we cannot create a Error Boundaries in function components.
+
+* we can also use custom function to handle error, but we need to handle manually using try catch.
+
+* since (getDerivedStateFromError()) and (ComponentDidCatch()) are build functions in react, which will
+get triggered automatically when child components throws error.
+
+1. ErrorBoundComp----> parent class Comp
+2. UserComp-----> child class Comp
+
+
+
+Eg program:
+   
+import React from 'react'
+
+export const UserComp = (props) => {
+    if(props.user!=="selva balaji")
+    {
+        throw new Error
+    }
+    return (
+        <div>
+           <p>{props.user}</p> 
+        </div>
+    )
+}
+export default UserComp
+
+
+import React, { Component } from 'react'
+
+ class ErrorBoundComp extends Component {
+    constructor(props){
+        super(props)
+        this.state={
+            isCond:false
+        }
+        }
+
+        static getDerivedStateFromError(){
+            return {
+                isCond:true
+            }
+        }
+        componentDidCatch(error)
+        {
+         console.log("Invalid username")
+        }
+        
+    
+    render() {
+        if(this.state.isCond)
+        {
+            return <h2>AnError occurred</h2>
+        }
+        return this.props.children;
+    }
+}
+export default ErrorBoundComp
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+

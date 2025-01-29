@@ -1,0 +1,7 @@
+Virtual Dom:
+
+ * Instead of manipulating Browser Dom directly, react creates virtual dom, where it does all 
+necessary changes, before making changes on browser dom.
+ * React only renders the code which has been changed.
+ * Thats why react is faster
+ 

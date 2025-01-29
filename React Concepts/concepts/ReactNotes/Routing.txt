@@ -1,0 +1,66 @@
+React routing:
+
+* Navigation Component
+* By writing routing path name in browser url to display component output/view.
+* Library using: "react-router-dom"
+
+ To install : 
+ 1)npm install react-router-dom@latest
+ 2)npm install react-router-dom@6
+
+React router methods:
+1) BrowserRouter 
+2) createBrowserRouter
+
+Both are used for routing but serve different purposes
+
+1) BrowserRouter:
+
+*library used:react-router-dom
+syntax:  import {BrowserRouter, Routes, Route}
+from "react-router-dom"
+
+function App(){
+ return{
+ <BrowserRouter>
+   <Routes>
+     <Route path="" element="">
+   </Routes
+ </BrowserRouter>
+}
+}
+Routes:container for <Route> Components
+route: inside we give the path and element
+
+
+1. createBrowserRouter(): it is a method takes array of object type of data 
+                        -in its object we use two property path, element.
+
+                        -in this method we define all types of routing
+2. RouterProvider():    it helps us to render output of all routing component on browser
+   library using: import { RouterProvider } from 'react-router-dom';
+  <RouterProvider router={routing}></RouterProvider>
+
+
+
+Types of routing:
+
+1)Naming routing: Display component output after writing component path name in brower url.
+
+2)default routing: Display component output without writing routing path name.
+
+3)parameterize routing: Display component output after passing parameter with routing path name.
+		Eg:  {path:"classcomp/:id",element:<ClassComp/>},
+
+4)wild-cart(*) routing: when user write wrong path name in browser url, then we decide what component to display.
+		Eg:{path:"*",element:<PageNotFoundComp/>}
+
+5)child-routing: Display one routing inside another routing.
+		Eg: {path:"hooks",element:<ReactHooksComp/>,children:[
+        	    {path:"useeffect",element:<UseEffectHooksComp/>},
+        	    {path:"usestate",element:<UseStateHooksComp/>},
+    		    ]},
+
+Outlet:
+
+* To display child routing output we have to add <outlet> library in parent routing component.
