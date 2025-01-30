@@ -45,7 +45,7 @@ route: inside we give the path and element
 
 Types of routing:
 
-1)Naming routing: Display component output after writing component path name in brower url.
+1)Naming routing: Display component output after writing component path name in browerurl.
 
 2)default routing: Display component output without writing routing path name.
 

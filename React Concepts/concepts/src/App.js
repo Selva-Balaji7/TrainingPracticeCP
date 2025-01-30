@@ -23,6 +23,8 @@ import ClickCounter from './HocComp/ClickCounter';
 import MyHocComp from './HocComp/MyHocComp';
 import UserComp from './ErrorBoundary/UserComp';
 import ErrorBoundComp from './ErrorBoundary/ErrorBoundComp';
+import MountingComp from './CompLifeCycle/Mounting';
+import UpdatingPhaseComp from './CompLifeCycle/UpdatingPhase';
 
 function App() {
   // const Emp={
@@ -46,9 +48,12 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <ErrorBoundComp>
+      <UpdatingPhaseComp></UpdatingPhaseComp>
+      {/* <MountingComp></MountingComp> */}
+      
+      {/* <ErrorBoundComp>
          <UserComp name="selva"></UserComp>
-      </ErrorBoundComp>
+      </ErrorBoundComp> */}
       {/* <ClickCounter></ClickCounter> */}
       {/* <ParentComp gender="Male" contact="9289383821"></ParentComp>  */}
       {/* <MyPureComp empName="selva"></MyPureComp> */}

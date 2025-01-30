@@ -1,0 +1,29 @@
+Hoc(higher order Component):
+
+* To share same business logic with multiple components, we use HOC.
+* Here we share business logic from function component to other Components.
+
+eg: In wrapper component, we need to import hoc component
+    import MyHocComp from "./MyHocComp";
+    export default MyHocComp(ClickCounterComp);
+
+wrapper Component:
+	*A Wrapper Component (or Wrapped Component) is a normal React component that gets wrapped inside a Higher-Order Component (HOC). The HOC adds extra functionality to it.
+	*WrapperComp is a component that you pass as an argument to your HOC (MyHocComp).
+
+which component we should import in app.js?
+ * Since you're exporting the HOC-enhanced version of ClickCounterComp directly from ClickCounterComp.js, you should import it directly in App.js.
+
+Why import ClickCounterComp?
+
+ *Even though ClickCounterComp is a normal class component, you wrapped it with MyHocComp before exporting.
+So, ClickCounterComp already includes the HOC logic when you import it.
+Why not import MyHocComp separately?
+
+ *You don’t need to import MyHocComp in App.js because you already used it while exporting ClickCounterComp.
+
+
+
+
+
+

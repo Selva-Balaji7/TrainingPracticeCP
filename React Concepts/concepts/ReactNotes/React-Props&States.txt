@@ -62,5 +62,3 @@ Destructuring of state:
 *To avoid writing this.setState everytime to access state data, we use this feature
   syntax: const {name,age,gender}=this.state;
 
-
-   
