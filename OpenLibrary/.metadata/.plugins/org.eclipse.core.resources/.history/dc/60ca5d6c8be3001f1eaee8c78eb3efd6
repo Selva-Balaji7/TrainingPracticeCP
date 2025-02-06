@@ -1,0 +1,14 @@
+package com.Samsung.main;
+
+/**
+ * Hello world!
+ *
+ */
+public class  LaunchPage
+{
+    public static void main( String[] args )
+    {
+    	
+      driver.
+    }
+}

@@ -1,0 +1,22 @@
+package com.Samsung.main;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+/**
+ * Hello world!
+ *
+ */
+public class  LaunchPage
+{
+    public static void main( String[] args )
+    {
+    	
+      WebDriver driver = new ChromeDriver();
+      driver.get("https://www.samsung.com/in/");
+      boolean result= driver.findElement(By.className("icon")).isDisplayed();
+      System.out.print(result);
+      
+    }
+}

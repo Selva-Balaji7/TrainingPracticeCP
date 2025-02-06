@@ -1,0 +1,28 @@
+package com.Samsung.main;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+/**
+ * Hello world!
+ *
+ */
+public class  LaunchPage
+{
+    public static void main( String[] args )
+    {
+    	
+      WebDriver driver = new ChromeDriver();
+      driver.get("https://www.samsung.com/in/");
+      boolean logo= driver.findElement(By.className("icon")).isDisplayed();
+      System.out.print("logo present:"+logo);
+      driver.findElement(By.xpath("//button[@role='menuitem']")).click();
+      driver.findElement(By.name("search")).sendKeys("samsung M05");
+      driver.findElement(By.xpath("//svg[@data-di-res-id=\"e88bbc7d-f27a0034\"\"")).click();
+      
+      
+      
+      
+    }
+}
