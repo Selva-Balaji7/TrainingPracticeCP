@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.134+C:\Users\selva.balaji\Desktop\Junit-eclipse\.metadata\.plugins\org.eclipse.jdt.core
 3216745967.index
 3889221431.index
@@ -9,3 +10,7 @@ INDEX VERSION 1.134+C:\Users\selva.balaji\Desktop\Junit-eclipse\.metadata\.plugi
 1865797976.index
 4230071666.index
 4264153044.index
+=======
+INDEX VERSION 1.134+C:\Users\selva.balaji\Desktop\Automation\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+>>>>>>> c60a89182da28c6193021cb2b09559c605dce2b0

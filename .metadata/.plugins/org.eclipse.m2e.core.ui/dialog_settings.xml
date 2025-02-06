@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
 			<item value="C:\Users\selva.balaji\Desktop\Junit-eclipse"/>
+=======
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\selva.balaji\Desktop\Automation"/>
+>>>>>>> c60a89182da28c6193021cb2b09559c605dce2b0
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -13,6 +19,7 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+<<<<<<< HEAD
 	<section name="MavenProjectWizardArchetypePage">
 		<item key="catalog" value="internal"/>
 		<list key="projectNameTemplate">
@@ -69,4 +76,6 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
+=======
+>>>>>>> c60a89182da28c6193021cb2b09559c605dce2b0
 </section>
