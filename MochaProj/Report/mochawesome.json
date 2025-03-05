@@ -1,0 +1,391 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 8,
+    "passes": 7,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-12-20T10:03:43.467Z",
+    "end": "2024-12-20T10:03:43.773Z",
+    "duration": 306,
+    "testsRegistered": 8,
+    "passPercent": 87.5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "40a527b4-1216-47e7-995e-16c6c0a03259",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [
+        {
+          "title": "\"before all\" hook in \"{root}\"",
+          "fullTitle": "\"before all\" hook in \"{root}\"",
+          "timedOut": false,
+          "duration": 52,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "const chai = await import('chai'); // Dynamically import Chai\nexpect = chai.expect;",
+          "err": {},
+          "uuid": "5028944f-af60-4cd6-b062-e4bc78b91399",
+          "parentUUID": "40a527b4-1216-47e7-995e-16c6c0a03259",
+          "isHook": true,
+          "skipped": false
+        },
+        {
+          "title": "\"before all\" hook in \"{root}\"",
+          "fullTitle": "\"before all\" hook in \"{root}\"",
+          "timedOut": false,
+          "duration": 1,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "const chai = await import('chai');\nexpect = chai.expect;",
+          "err": {},
+          "uuid": "730d1eb1-570e-4f53-81bc-f00701604983",
+          "parentUUID": "40a527b4-1216-47e7-995e-16c6c0a03259",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "98058a84-60d8-4c44-be55-2ac6b7138aec",
+          "title": "Student Registration",
+          "fullFile": "C:\\Users\\selva.balaji\\Desktop\\MochaProj\\test\\app.spec.js",
+          "file": "\\test\\app.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should fail if any field is missing",
+              "fullTitle": "Student Registration should fail if any field is missing",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = register({ email: \"test@example.com\", password: \"password\", confirmPassword: \"password\" });\nexpect(result.success).to.be.false;\nexpect(result.message).to.equal(\"All fields are required\");",
+              "err": {},
+              "uuid": "9d4b2556-0cc4-44cf-9177-01bc12a4d6ee",
+              "parentUUID": "98058a84-60d8-4c44-be55-2ac6b7138aec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fail if passwords do not match",
+              "fullTitle": "Student Registration should fail if passwords do not match",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = register({\n  firstName: \"John\", lastName: \"Doe\", email: \"test@example.com\", contact: \"1234567890\",\n  password: \"password123\", confirmPassword: \"password\", role: \"Student\", branch: \"CDAC\", gender: \"Male\"\n});\nexpect(result.success).to.be.false;\nexpect(result.message).to.equal(\"Passwords do not match\");",
+              "err": {},
+              "uuid": "3f0f3bf9-913b-453e-8530-97cf8501e8f2",
+              "parentUUID": "98058a84-60d8-4c44-be55-2ac6b7138aec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fail if password is less than 6 characters",
+              "fullTitle": "Student Registration should fail if password is less than 6 characters",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = register({\n  firstName: \"John\", lastName: \"Doe\", email: \"test@example.com\", contact: \"1234567890\",\n  password: \"pass\", confirmPassword: \"pass\", role: \"Student\", branch: \"CDAC\", gender: \"Male\"\n});\nexpect(result.success).to.be.false;\nexpect(result.message).to.equal(\"Password must be at least 6 characters\");",
+              "err": {},
+              "uuid": "cdc50c34-4e54-46a7-ada3-0c9665e6b749",
+              "parentUUID": "98058a84-60d8-4c44-be55-2ac6b7138aec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fail if email format is invalid",
+              "fullTitle": "Student Registration should fail if email format is invalid",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = register({\n  firstName: \"John\", lastName: \"Doe\", email: \"invalid-email\", contact: \"1234567890\",\n  password: \"password123\", confirmPassword: \"password123\", role: \"Student\", branch: \"CDAC\", gender: \"Male\"\n});\nexpect(result.success).to.be.false;\nexpect(result.message).to.equal(\"Invalid email format\");",
+              "err": {},
+              "uuid": "fa6bb13d-8a4f-419c-86f9-cd24791d722e",
+              "parentUUID": "98058a84-60d8-4c44-be55-2ac6b7138aec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fail if contact number is not 10 digits",
+              "fullTitle": "Student Registration should fail if contact number is not 10 digits",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = register({\n  firstName: \"John\", lastName: \"Doe\", email: \"test@example.com\", contact: \"12345\",\n  password: \"password123\", confirmPassword: \"password123\", role: \"Student\", branch: \"CDAC\", gender: \"Male\"\n});\nexpect(result.success).to.be.false;\nexpect(result.message).to.equal(\"Contact number must be 10 digits\");",
+              "err": {},
+              "uuid": "dfab8ea1-0a1a-47fa-b156-a62a8402e440",
+              "parentUUID": "98058a84-60d8-4c44-be55-2ac6b7138aec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should succeed if all fields are valid",
+              "fullTitle": "Student Registration should succeed if all fields are valid",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = register({\n  firstName: \"John\", lastName: \"Doe\", email: \"test@example.com\", contact: \"1234567890\",\n  password: \"password123\", confirmPassword: \"password123\", role: \"Student\", branch: \"CDAC\", gender: \"Male\"\n});\nexpect(result.success).to.be.true;\nexpect(result.message).to.equal(\"Registration successful\");",
+              "err": {},
+              "uuid": "1526b898-6d69-4b9d-bbd8-91dde0619d54",
+              "parentUUID": "98058a84-60d8-4c44-be55-2ac6b7138aec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9d4b2556-0cc4-44cf-9177-01bc12a4d6ee",
+            "3f0f3bf9-913b-453e-8530-97cf8501e8f2",
+            "cdc50c34-4e54-46a7-ada3-0c9665e6b749",
+            "fa6bb13d-8a4f-419c-86f9-cd24791d722e",
+            "dfab8ea1-0a1a-47fa-b156-a62a8402e440",
+            "1526b898-6d69-4b9d-bbd8-91dde0619d54"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b89c621f-73a5-4d3d-97c3-59a01b77fae8",
+          "title": "Suite 4",
+          "fullFile": "C:\\Users\\selva.balaji\\Desktop\\MochaProj\\test\\app2.spec.js",
+          "file": "\\test\\app2.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Suite 4\"",
+              "fullTitle": "Suite 4 \"before all\" hook in \"Suite 4\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// runs once before the first test in this block\nconsole.log('before')",
+              "err": {},
+              "uuid": "efa3cb83-69b0-4403-a566-13c00abc7315",
+              "parentUUID": "b89c621f-73a5-4d3d-97c3-59a01b77fae8",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook in \"Suite 4\"",
+              "fullTitle": "Suite 4 \"before each\" hook in \"Suite 4\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// runs before each test in this block\nconsole.log('beforeEach')",
+              "err": {},
+              "uuid": "e920583b-c312-4541-8946-1203fe9964db",
+              "parentUUID": "b89c621f-73a5-4d3d-97c3-59a01b77fae8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Suite 4\"",
+              "fullTitle": "Suite 4 \"after all\" hook in \"Suite 4\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// runs once after the last test in this block\nconsole.log('after')",
+              "err": {},
+              "uuid": "42da73b1-315d-4368-877a-0a4d8e63e2a6",
+              "parentUUID": "b89c621f-73a5-4d3d-97c3-59a01b77fae8",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook in \"Suite 4\"",
+              "fullTitle": "Suite 4 \"after each\" hook in \"Suite 4\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// runs after each test in this block\nconsole.log('afterEach')",
+              "err": {},
+              "uuid": "d49c8747-95d0-426d-a8c6-9d803544d695",
+              "parentUUID": "b89c621f-73a5-4d3d-97c3-59a01b77fae8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "add(2,3) should retuen 5",
+              "fullTitle": "Suite 4 add(2,3) should retuen 5",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(add(2,3)).to.be.equal(5);\nconsole.log('it')",
+              "err": {},
+              "uuid": "f9299660-16b2-41b2-9b88-ccecc64a17df",
+              "parentUUID": "b89c621f-73a5-4d3d-97c3-59a01b77fae8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f9299660-16b2-41b2-9b88-ccecc64a17df"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e6e7f4cf-c2b5-4f4c-ba32-3e4b007fe5d4",
+          "title": "Test Suite 1",
+          "fullFile": "C:\\Users\\selva.balaji\\Desktop\\MochaProj\\test\\asynch.app.spec.js",
+          "file": "\\test\\asynch.app.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "promised based way",
+              "fullTitle": "Test Suite 1 promised based way",
+              "timedOut": false,
+              "duration": 233,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "return axios.get('http://quiz-be-test.hematitecorp.com/api/user/').then(res => {\n  expect(res.data.data[2].fname).to.be.equal('monica');\n  expect(res.data.data[1].id).to.be.equal(2);\n});",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading '2')",
+                "estack": "TypeError: Cannot read properties of undefined (reading '2')\n    at C:\\Users\\selva.balaji\\Desktop\\MochaProj\\test\\asynch.app.spec.js:12:27\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "eed8e5fa-138a-4898-9012-c8e95739a645",
+              "parentUUID": "e6e7f4cf-c2b5-4f4c-ba32-3e4b007fe5d4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "eed8e5fa-138a-4898-9012-c8e95739a645"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 233,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "Report",
+        "reopenfilename": "Test_Report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
