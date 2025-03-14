@@ -1,0 +1,76 @@
+React conditionals:
+----------------------
+render : display component output or view on browser
+*conditional rendering : display component on the basis of condition
+    1. use of if else : if condition is true then if block will render otherwise,else block will render
+    2. element as variable : in variable we store data and display inside tag and return it
+    3. use of ternary operator : short hand syntax for if else. condition ? true : false
+    4. use of short-circuit : if condition is true then and only  it will displey output
+
+eg:
+  import React, { useState } from 'react';
+
+const Condrend2 = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  let msg='';
+
+  const toggleLogin = () => {
+    setIsLoggedIn((prev) => !prev); // Toggle the login state
+  };
+  
+
+  1. using ifelse:
+  if(isLoggedIn){
+      msg=(
+        <div>
+        <h1>Welcome back to the conditonal rendering!</h1>
+        <p>You are logged in.</p>
+        <button className='btn btn-danger' onClick={toggleLogin}>Log Out</button>
+      </div> 
+      );
+  }
+  else{
+      msg=(
+        <div>
+        <h1>Please log in to see the output</h1>
+        <button className='btn btn-success' onClick={toggleLogin}>Log In</button>
+      </div>
+      );
+
+  }
+
+
+  2.ternary operator
+  return (
+    <div>
+      {isLoggedIn ? (
+        <div>
+          <h1>Welcome back!</h1>
+          <p>You are logged in.</p>
+          <button className='btn btn-danger' onClick={toggleLogin}>Log Out</button>
+        </div>
+      ) : (
+        <div>
+          <h1>Please log in.</h1>
+          <button className='btn btn-success' onClick={toggleLogin}>Log In</button>
+        </div>
+      )}
+    </div>
+  );
+
+3.using element as a variable
+  return(
+      <div>
+          {msg}
+      </div>
+  )
+
+4.using short circuit condition
+  return(
+      isLoggedIn && <h2>login successfull</h2>
+    
+  )
+};
+
+export default Condrend2
